@@ -1,0 +1,749 @@
+ <!-- include main-header.html"-->
+
+</head>
+
+<body>
+
+  <!-- include switcher.html"-->
+  <!-- include loader.html"-->
+
+    <div class="page">
+
+      <!-- include header.html"-->
+      <!-- include menu.html"-->
+
+
+      <div class="content main-index">
+
+        <!-- Start::main-content -->
+        <div class="main-content">
+
+          <!-- Start::page-header -->
+          <div class="md:flex block items-center justify-between my-[1.5rem] page-header-breadcrumb">
+            <div>
+              <p class="font-semibold text-[1.125rem] text-defaulttextcolor dark:text-defaulttextcolor/70 !mb-0 ">Welcome back, Json Taylor !</p>
+              <p class="font-normal text-[#8c9097] dark:text-white/50 text-[0.813rem]">Track user activity, projects, subscriptions, and system health at a glance.</p>
+            </div>
+          </div>
+          <!-- End::page-header -->
+
+          <div class="grid grid-cols-12 gap-x-6">
+            <div class="xxl:col-span-9 xl:col-span-12  col-span-12">
+              <div class="grid grid-cols-12 gap-x-6">
+                <div class="xxl:col-span-4 xl:col-span-4  col-span-12">
+                  
+                  <!--Not in use but don't delete. Deleting would affect charts in other sections of this page. It's already hidden-->
+                  <div class="xxl:col-span-12 xl:col-span-12 col-span-12 hidden">
+                    <div class="box crm-highlight-card">
+                      <div class="box-body">
+                        <div class="flex items-center justify-between">
+                          <div>
+                            <div class="font-semibold text-[1.125rem] text-white mb-2">Your target is incomplete</div>
+                            <span class="block text-[0.75rem] text-white"><span class="opacity-[0.7]">You have
+                                completed</span>
+                              <span class="font-semibold text-warning">48%</span> <span class="opacity-[0.7]">of the given
+                                target, you can also check your status</span>.</span>
+                            <span class="block font-semibold mt-[0.125rem]"><a class="text-white text-[0.813rem]"
+                                href="javascript:void(0);"><u>Click
+                                  here</u></a></span>
+                          </div>
+                          <div>
+                            <div id="crm-main"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--New sign up section-->
+                  <div class="xxl:col-span-12 xl:col-span-12 col-span-12">
+                    <div class="box">
+                      <div class="box-header flex justify-between">
+                        <div class="box-title">
+                          New Signups
+                        </div>
+                        <div class="hs-dropdown ti-dropdown">
+                          <a aria-label="anchor" href="javascript:void(0);"
+                            class="flex items-center justify-center w-[1.75rem] h-[1.75rem]  !text-[0.8rem] !py-1 !px-2 rounded-sm bg-light border-light shadow-none !font-medium"
+                            aria-expanded="false">
+                            <i class="fe fe-more-vertical text-[0.8rem]"></i>
+                          </a>
+                          <ul class="hs-dropdown-menu ti-dropdown-menu hidden">
+                            <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
+                                href="javascript:void(0);">Week</a></li>
+                            <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
+                                href="javascript:void(0);">Month</a></li>
+                            <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
+                                href="javascript:void(0);">Year</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="box-body">
+                        <ul class="list-none crm-top-deals mb-0">
+                          <!--New sign ups(5 list of recent signups)-->
+                          <!--Start of first row-->
+                          <li class="mb-[0.9rem]">
+                            <div class="flex items-center flex-wrap">
+                              <div class="me-2">
+                                <span class=" inline-flex items-center justify-center">
+                                  <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                </span>
+                              </div>
+                              <div class="flex-grow">
+                                <p class="font-semibold mb-[1.4px]  text-[0.813rem]">Michael Jordan
+                                </p>
+                                <p class="text-[#8c9097] dark:text-white/50 text-[0.75rem] mb-0">michael.jordan@example.com</p>
+                              </div>
+                            </div>
+                          </li>
+                          <!--End of first row-->
+                          <li class="mb-[0.9rem]">
+                            <div class="flex items-center flex-wrap">
+                              <div class="me-2">
+                                <span class=" inline-flex items-center justify-center">
+                                  <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                </span>
+                              </div>
+                              <div class="flex-grow">
+                                <p class="font-semibold mb-[1.4px]  text-[0.813rem]">Michael Jordan
+                                </p>
+                                <p class="text-[#8c9097] dark:text-white/50 text-[0.75rem] mb-0">michael.jordan@example.com</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="mb-[0.9rem]">
+                            <div class="flex items-center flex-wrap">
+                              <div class="me-2">
+                                <span class=" inline-flex items-center justify-center">
+                                  <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                </span>
+                              </div>
+                              <div class="flex-grow">
+                                <p class="font-semibold mb-[1.4px]  text-[0.813rem]">Michael Jordan
+                                </p>
+                                <p class="text-[#8c9097] dark:text-white/50 text-[0.75rem] mb-0">michael.jordan@example.com</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="mb-[0.9rem]">
+                            <div class="flex items-center flex-wrap">
+                              <div class="me-2">
+                                <span class=" inline-flex items-center justify-center">
+                                  <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                </span>
+                              </div>
+                              <div class="flex-grow">
+                                <p class="font-semibold mb-[1.4px]  text-[0.813rem]">Michael Jordan
+                                </p>
+                                <p class="text-[#8c9097] dark:text-white/50 text-[0.75rem] mb-0">michael.jordan@example.com</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="mb-[0.9rem]">
+                            <div class="flex items-center flex-wrap">
+                              <div class="me-2">
+                                <span class=" inline-flex items-center justify-center">
+                                  <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                </span>
+                              </div>
+                              <div class="flex-grow">
+                                <p class="font-semibold mb-[1.4px]  text-[0.813rem]">Michael Jordan
+                                </p>
+                                <p class="text-[#8c9097] dark:text-white/50 text-[0.75rem] mb-0">michael.jordan@example.com</p>
+                              </div>
+                            </div>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--Recent Subscriptions-->
+                  <div class="xxl:col-span-12 col-span-12">
+                    <div class="box">
+                        <div class="box-header justify-between">
+                            <div class="box-title">
+                                Recent Subscriptions
+                            </div>
+                            <div>
+                              <a class="text-primary text-[0.813rem]" href="javascript:void(0);">View All<i
+                                  class="ti ti-arrow-narrow-right ms-2 font-semibold inline-block"></i></a>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <ul class="list-none project-transactions-card">
+                              <!--Recent subscriptions (Latest 5)-->
+                                <!--Start of First card-->
+                                <li>
+                                    <div class="flex items-start">
+                                        <div class="me-3">
+                                          <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                        </div>
+                                        <div class="flex-grow">
+                                            <span class="block font-semibold">Simon Cowall</span>
+                                            <span class="block text-[#8c9097] dark:text-white/50 text-[0.6875rem]">Feb 28,2023 - 12:54PM</span>
+                                        </div>
+                                        <div>
+                                            <h6 class="font-semibold text-[1rem]">$50</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--End of first card-->
+                                <li>
+                                    <div class="flex items-start">
+                                        <div class="me-3">
+                                          <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                        </div>
+                                        <div class="flex-grow">
+                                            <span class="block font-semibold">Simon Cowall</span>
+                                            <span class="block text-[#8c9097] dark:text-white/50 text-[0.6875rem]">Feb 28,2023 - 12:54PM</span>
+                                        </div>
+                                        <div>
+                                            <h6 class="font-semibold text-[1rem]">$50</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="flex items-start">
+                                        <div class="me-3">
+                                          <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                        </div>
+                                        <div class="flex-grow">
+                                            <span class="block font-semibold">Simon Cowall</span>
+                                            <span class="block text-[#8c9097] dark:text-white/50 text-[0.6875rem]">Feb 28,2023 - 12:54PM</span>
+                                        </div>
+                                        <div>
+                                            <h6 class="font-semibold text-[1rem]">$50</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="flex items-start">
+                                        <div class="me-3">
+                                          <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                        </div>
+                                        <div class="flex-grow">
+                                            <span class="block font-semibold">Simon Cowall</span>
+                                            <span class="block text-[#8c9097] dark:text-white/50 text-[0.6875rem]">Feb 28,2023 - 12:54PM</span>
+                                        </div>
+                                        <div>
+                                            <h6 class="font-semibold text-[1rem]">$50</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="flex items-start">
+                                        <div class="me-3">
+                                          <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                        </div>
+                                        <div class="flex-grow">
+                                            <span class="block font-semibold">Simon Cowall</span>
+                                            <span class="block text-[#8c9097] dark:text-white/50 text-[0.6875rem]">Feb 28,2023 - 12:54PM</span>
+                                        </div>
+                                        <div>
+                                            <h6 class="font-semibold text-[1rem]">$50</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Not in use but don't delete. Deleting would affect charts in other sections of this page. It's already hidden-->
+                  <div class="xxl:col-span-12 xl:col-span-12 col-span-12 hidden">
+                    <div class="box">
+                      <div class="box-header justify-between">
+                        <div class="box-title">Profit Earned</div>
+                        <div class="hs-dropdown ti-dropdown">
+                          <a href="javascript:void(0);" class="px-2 font-normal text-[0.75rem] text-[#8c9097] dark:text-white/50"
+                            aria-expanded="false">
+                            View All<i class="ri-arrow-down-s-line align-middle ms-1 inline-block"></i>
+                          </a>
+                          <ul class="hs-dropdown-menu ti-dropdown-menu hidden" role="menu">
+                            <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
+                                href="javascript:void(0);">Today</a></li>
+                            <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
+                                href="javascript:void(0);">This Week</a></li>
+                            <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
+                                href="javascript:void(0);">Last Week</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="box-body !py-0 !ps-0">
+                        <div id="crm-profits-earned"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--End of it-->
+
+                <div class="xxl:col-span-8  xl:col-span-8  col-span-12">
+                  <div class="grid grid-cols-12 gap-x-6">
+                    <div class="xxl:col-span-6 xl:col-span-6 col-span-12">
+                      <div class="box overflow-hidden">
+                        <div class="box-body">
+                          <div class="flex items-top justify-between">
+                            <div>
+                              <span
+                                class="!text-[0.8rem]  !w-[2.5rem] !h-[2.5rem] !leading-[2.5rem] !rounded-full inline-flex items-center justify-center bg-primary">
+                                <i class="ti ti-users text-[1rem] text-white"></i>
+                              </span>
+                            </div>
+                            <div class="flex-grow ms-4">
+                              <div class="flex items-center justify-between flex-wrap">
+                                <div>
+                                  <p class="text-[#8c9097] dark:text-white/50 text-[0.813rem] mb-0">Total registered users</p>
+                                  <h4 class="font-semibold  text-[1.5rem] !mb-2 ">5,000</h4>
+                                </div>
+                                <div id="crm-total-customers"></div>
+                              </div>
+                              <div class="flex items-center justify-between !mt-1">
+                                <div>
+                                  <a class="text-primary text-[0.813rem]" href="javascript:void(0);">View All<i
+                                      class="ti ti-arrow-narrow-right ms-2 font-semibold inline-block"></i></a>
+                                </div>
+                                <div class="text-end">
+                                  <p class="mb-0 text-success text-[0.813rem] font-semibold">+40%</p>
+                                  <p class="text-[#8c9097] dark:text-white/50 opacity-[0.7] text-[0.6875rem]">this month</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="xxl:col-span-6 xl:col-span-6 col-span-12">
+                      <div class="box overflow-hidden">
+                        <div class="box-body">
+                          <div class="flex items-top justify-between">
+                            <div>
+                              <span
+                                class="!text-[0.8rem]  !w-[2.5rem] !h-[2.5rem] !leading-[2.5rem] !rounded-full inline-flex items-center justify-center bg-secondary">
+                                <i class="bx bx-money text-[1rem] text-white"></i>
+                              </span>
+                            </div>
+                            <div class="flex-grow ms-4">
+                              <div class="flex items-center justify-between flex-wrap">
+                                <div>
+                                  <p class="text-[#8c9097] dark:text-white/50 text-[0.813rem] mb-0">Total subscribers</p>
+                                  <h4 class="font-semibold text-[1.5rem] !mb-2 ">2,100</h4>
+                                </div>
+                                <div id="crm-total-revenue"></div>
+                              </div>
+                              <div class="flex items-center justify-between mt-1">
+                                <div>
+                                  <a class="text-secondary text-[0.813rem]" href="javascript:void(0);">View All<i
+                                      class="ti ti-arrow-narrow-right ms-2 font-semibold inline-block"></i></a>
+                                </div>
+                                <div class="text-end">
+                                  <p class="mb-0 text-success text-[0.813rem] font-semibold">+25%</p>
+                                  <p class="text-[#8c9097] dark:text-white/50 opacity-[0.7] text-[0.6875rem]">this month</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="xxl:col-span-6 xl:col-span-6 col-span-12">
+                      <div class="box overflow-hidden">
+                        <div class="box-body">
+                          <div class="flex items-top justify-between">
+                            <div>
+                              <span
+                                class="!text-[0.8rem]  !w-[2.5rem] !h-[2.5rem] !leading-[2.5rem] !rounded-full inline-flex items-center justify-center bg-success">
+                                <i class="bx bx-file text-[1rem] text-white"></i>
+                              </span>
+                            </div>
+                            <div class="flex-grow ms-4">
+                              <div class="flex items-center justify-between flex-wrap">
+                                <div>
+                                  <p class="text-[#8c9097] dark:text-white/50 text-[0.813rem] mb-0">Total projects</p>
+                                  <h4 class="font-semibold text-[1.5rem] !mb-2 ">3,200</h4>
+                                </div>
+                                <div id="crm-conversion-ratio"></div>
+                              </div>
+                              <div class="flex items-center justify-between mt-1">
+                                <div>
+                                  <a class="text-success text-[0.813rem]" href="javascript:void(0);">View All<i
+                                      class="ti ti-arrow-narrow-right ms-2 font-semibold inline-block"></i></a>
+                                </div>
+                                <div class="text-end">
+                                  <p class="mb-0 text-danger text-[0.813rem] font-semibold">-12%</p>
+                                  <p class="text-[#8c9097] dark:text-white/50 opacity-[0.7] text-[0.6875rem]">this month</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="xxl:col-span-6 xl:col-span-6 col-span-12">
+                      <div class="box overflow-hidden">
+                        <div class="box-body">
+                          <div class="flex items-top justify-between">
+                            <div>
+                              <span
+                                class="!text-[0.8rem]  !w-[2.5rem] !h-[2.5rem] !leading-[2.5rem] !rounded-full inline-flex items-center justify-center bg-warning">
+                                <i class="ti ti-briefcase text-[1rem] text-white"></i>
+                              </span>
+                            </div>
+                            <div class="flex-grow ms-4">
+                              <div class="flex items-center justify-between flex-wrap">
+                                <div>
+                                  <p class="text-[#8c9097] dark:text-white/50 text-[0.813rem] mb-0">Total Revenue</p>
+                                  <h4 class="font-semibold text-[1.5rem] !mb-2 ">$2,543</h4>
+                                </div>
+                                <div id="crm-total-deals"></div>
+                              </div>
+                              <div class="flex items-center justify-between mt-1">
+                                <div>
+                                  <a class="text-warning text-[0.813rem]" href="javascript:void(0);">View All<i
+                                      class="ti ti-arrow-narrow-right ms-2 font-semibold inline-block"></i></a>
+                                </div>
+                                <div class="text-end">
+                                  <p class="mb-0 text-success text-[0.813rem] font-semibold">+19%</p>
+                                  <p class="text-[#8c9097] dark:text-white/50  opacity-[0.7] text-[0.6875rem]">this month</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                     <!--Subscription analytics section-->
+                     <!--To edit the chat go to HTML\src\assets\js\crm-dashboard.js-->
+                    <div class="xxl:col-span-12 xl:col-span-12 col-span-12">
+                      <div class="box">
+                        <div class="box-header !gap-0 !m-0 justify-between">
+                          <div class="box-title">
+                            Subscription Analytics
+                          </div>
+                          <div class="hs-dropdown ti-dropdown">
+                            <a href="javascript:void(0);" class="text-[0.75rem] px-2 font-normal text-[#8c9097] dark:text-white/50"
+                              aria-expanded="false">
+                              View All<i class="ri-arrow-down-s-line align-middle ms-1 inline-block"></i>
+                            </a>
+                            <ul class="hs-dropdown-menu ti-dropdown-menu hidden" role="menu">
+                              <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
+                                  href="javascript:void(0);">Today</a></li>
+                              <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
+                                  href="javascript:void(0);">This Week</a></li>
+                              <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
+                                  href="javascript:void(0);">Last Week</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="box-body !py-5">
+                          <div id="crm-revenue-analytics"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!--Recent projects section-->
+                <div class="xxl:col-span-12 xl:col-span-12 col-span-12">
+                  <div class="box custom-card">
+                    <div class="box-header justify-between">
+                      <div class="box-title">
+                        Recent Projects
+                      </div>
+                    </div>
+                    <div class="box-body">
+                      <div class="overflow-x-auto">
+                        <table class="table min-w-full whitespace-nowrap table-hover border table-bordered">
+                          <thead>
+                            <tr class="border border-inherit border-solid dark:border-defaultborder/10">
+                              <th scope="col" class="!text-start !text-[0.85rem]">Project name</th>
+                              <th scope="col" class="!text-start !text-[0.85rem]">Author</th>
+                              <th scope="col" class="!text-start !text-[0.85rem]">Email</th>
+                              <th scope="col" class="!text-start !text-[0.85rem]">Status</th>
+                              <th scope="col" class="!text-start !text-[0.85rem]">Last modified</th>
+                              <th scope="col" class="!text-start !text-[0.85rem]">Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                              <!--Recent 5 projects-->
+                              <!--Project row-->
+                              <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                <td class="line-clamp-1 w-60">Social media and mental health Social media and mental health</td>
+                                <td>
+                                  <div class="flex items-center font-semibold">
+                                    <span class="!me-2 inline-flex justify-center items-center">
+                                      <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                    </span>Mayor Kelly
+                                  </div>
+                                </td>
+                                <td>mayorkelly@gmail.com</td>
+                                <td>
+                                  <span
+                                    class="inline-flex text-info !py-[0.15rem] !px-[0.45rem] rounded-sm !font-semibold !text-[0.75em] bg-info/10">Completed</span>
+                                </td>
+                                <td>Feb 12, 2025</td>
+                                <td><a href="" class="flex items-center border border-primary p-2 rounded-md justify-center">View</a></td>
+                              <!--End of row 1-->
+                              <!--Others-->
+                              </tr>
+                              <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                <td class="line-clamp-1 w-60">Social media and mental health Social media and mental health</td>
+                                <td>
+                                  <div class="flex items-center font-semibold">
+                                    <span class="!me-2 inline-flex justify-center items-center">
+                                      <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                    </span>Mayor Kelly
+                                  </div>
+                                </td>
+                                <td>mayorkelly@gmail.com</td>
+                                <td>
+                                  <span
+                                    class="inline-flex text-info !py-[0.15rem] !px-[0.45rem] rounded-sm !font-semibold !text-[0.75em] bg-info/10">Completed</span>
+                                </td>
+                                <td>Feb 12, 2025</td>
+                                <td><a href="" class="flex items-center border border-primary p-2 rounded-md justify-center">View</a></td>
+                              </tr>
+                              <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                <td class="line-clamp-1 w-60">Social media and mental health Social media and mental health</td>
+                                <td>
+                                  <div class="flex items-center font-semibold">
+                                    <span class="!me-2 inline-flex justify-center items-center">
+                                      <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                    </span>Mayor Kelly
+                                  </div>
+                                </td>
+                                <td>mayorkelly@gmail.com</td>
+                                <td>
+                                  <span
+                                    class="inline-flex text-info !py-[0.15rem] !px-[0.45rem] rounded-sm !font-semibold !text-[0.75em] bg-info/10">Completed</span>
+                                </td>
+                                <td>Feb 12, 2025</td>
+                                <td><a href="" class="flex items-center border border-primary p-2 rounded-md justify-center">View</a></td>
+                              </tr>
+                              <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                <td class="line-clamp-1 w-60">Social media and mental health Social media and mental health</td>
+                                <td>
+                                  <div class="flex items-center font-semibold">
+                                    <span class="!me-2 inline-flex justify-center items-center">
+                                      <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                    </span>Mayor Kelly
+                                  </div>
+                                </td>
+                                <td>mayorkelly@gmail.com</td>
+                                <td>
+                                  <span
+                                    class="inline-flex text-info !py-[0.15rem] !px-[0.45rem] rounded-sm !font-semibold !text-[0.75em] bg-info/10">Completed</span>
+                                </td>
+                                <td>Feb 12, 2025</td>
+                                <td><a href="" class="flex items-center border border-primary p-2 rounded-md justify-center">View</a></td>
+                              </tr>
+                              <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                <td class="line-clamp-1 w-60">Social media and mental health Social media and mental health</td>
+                                <td>
+                                  <div class="flex items-center font-semibold">
+                                    <span class="!me-2 inline-flex justify-center items-center">
+                                      <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                    </span>Mayor Kelly
+                                  </div>
+                                </td>
+                                <td>mayorkelly@gmail.com</td>
+                                <td>
+                                  <span
+                                    class="inline-flex text-info !py-[0.15rem] !px-[0.45rem] rounded-sm !font-semibold !text-[0.75em] bg-info/10">Completed</span>
+                                </td>
+                                <td>Feb 12, 2025</td>
+                                <td><a href="" class="flex items-center border border-primary p-2 rounded-md justify-center">View</a></td>
+                              </tr>
+                          
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    
+
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <!--Tools usuage section-->
+            <div class="xxl:col-span-3 xl:col-span-12 col-span-12">
+              <div class="grid grid-cols-12 gap-x-6">
+                <div class="xxl:col-span-12 xl:col-span-12  col-span-12">
+                  <div class="box">
+                    <div class="box-header justify-between">
+                      <div class="box-title">
+                        Tools Usuage
+                      </div>
+                      <div class="hs-dropdown ti-dropdown">
+                        <a aria-label="anchor" href="javascript:void(0);"
+                          class="flex items-center justify-center w-[1.75rem] h-[1.75rem] ! !text-[0.8rem] !py-1 !px-2 rounded-sm bg-light border-light shadow-none !font-medium"
+                          aria-expanded="false">
+                          <i class="fe fe-more-vertical text-[0.8rem]"></i>
+                        </a>
+                        <ul class="hs-dropdown-menu ti-dropdown-menu hidden">
+                          <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
+                              href="javascript:void(0);">Week</a></li>
+                          <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
+                              href="javascript:void(0);">Month</a></li>
+                          <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
+                              href="javascript:void(0);">Year</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="box-body overflow-hidden">
+                      <div class="leads-source-chart flex items-center justify-center">
+                        <canvas id="leads-source" class="chartjs-chart w-full"></canvas>
+                        <div class="lead-source-value ">
+                          <span class="block text-[0.875rem] ">Total</span>
+                          <span class="block text-[1.5625rem] font-bold">4,145</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid grid-cols-4 border-t border-dashed dark:border-defaultborder/10">
+                      <div class="col !p-0">
+                        <div class="!ps-4 p-[0.95rem] text-center border-e border-dashed dark:border-defaultborder/10">
+                          <span class="text-[#8c9097] dark:text-white/50 text-[0.75rem] mb-1 crm-lead-legend mobile inline-block">Instruction Analyzer
+                          </span>
+                          <div><span class="text-[1rem]  font-semibold">1,624</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col !p-0">
+                        <div class="p-[0.95rem] text-center border-e border-dashed dark:border-defaultborder/10">
+                          <span class="text-[#8c9097] dark:text-white/50 text-[0.75rem] mb-1 crm-lead-legend desktop inline-block">Citation Manager
+                          </span>
+                          <div><span class="text-[1rem]  font-semibold">1,267</span></div>
+                        </div>
+                      </div>
+                      <div class="col !p-0">
+                        <div class="p-[0.95rem] text-center border-e border-dashed dark:border-defaultborder/10">
+                          <span class="text-[#8c9097] dark:text-white/50 text-[0.75rem] mb-1 crm-lead-legend laptop inline-block">Real-time Feedback
+                          </span>
+                          <div><span class="text-[1rem]  font-semibold">1,153</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col !p-0">
+                        <div class="!pe-4 p-[0.95rem] text-center">
+                          <span class="text-[#8c9097] dark:text-white/50 text-[0.75rem] mb-1 crm-lead-legend tablet inline-block">Other Tools
+                          </span>
+                          <div><span class="text-[1rem]  font-semibold">679</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!--Subscription status-->
+                <div class="xxl:col-span-12 xl:col-span-6  col-span-12">
+                  <div class="box">
+                    <div class="box-header justify-between">
+                      <div class="box-title">
+                        Subscription Status
+                      </div>
+                      <div class="hs-dropdown ti-dropdown">
+                        <a href="javascript:void(0);" class="text-[0.75rem] px-2 font-normal text-[#8c9097] dark:text-white/50"
+                          aria-expanded="false">
+                          View All<i class="ri-arrow-down-s-line align-middle ms-1 inline-block"></i>
+                        </a>
+                        <ul class="hs-dropdown-menu ti-dropdown-menu hidden" role="menu">
+                          <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
+                              href="javascript:void(0);">Today</a></li>
+                          <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
+                              href="javascript:void(0);">This Week</a></li>
+                          <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
+                              href="javascript:void(0);">Last Week</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="box-body">
+                      <div class="flex items-center mb-[0.8rem]">
+                        <h4 class="font-bold mb-0 text-[1.5rem] ">4,289</h4>
+                        <div class="ms-2">
+                          <span
+                            class="py-[0.18rem] px-[0.45rem] rounded-sm text-success !font-medium !text-[0.75em] bg-success/10">1.02<i
+                              class="ri-arrow-up-s-fill align-mmiddle ms-1"></i></span>
+                          <span class="text-[#8c9097] dark:text-white/50 text-[0.813rem] ms-1">compared to last week</span>
+                        </div>
+                      </div>
+
+                      <div class="flex w-full h-[0.3125rem] mb-6 rounded-full overflow-hidden">
+                        <div class="flex flex-col justify-center rounded-s-[0.625rem] overflow-hidden bg-primary w-[21%]" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                        <div class="flex flex-col justify-center rounded-none overflow-hidden bg-info w-[26%]" aria-valuenow="26" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                        <div class="flex flex-col justify-center rounded-none overflow-hidden bg-warning w-[35%]" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                        <div class="flex flex-col justify-center rounded-e-[0.625rem] overflow-hidden bg-success w-[18%]" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                      </div>
+                      <ul class="list-none mb-0 pt-2 crm-deals-status">
+                        <li class="primary">
+                          <div class="flex items-center text-[0.813rem]  justify-between">
+                            <div>Successful</div>
+                            <div class="text-[0.75rem] text-[#8c9097] dark:text-white/50">2,100</div>
+                          </div>
+                        </li>
+                        <li class="info">
+                          <div class="flex items-center text-[0.813rem]  justify-between">
+                            <div>Declined</div>
+                            <div class="text-[0.75rem] text-[#8c9097] dark:text-white/50">1,000</div>
+                          </div>
+                        </li>
+                        <li class="warning">
+                          <div class="flex items-center text-[0.813rem]  justify-between">
+                            <div>Cancelled</div>
+                            <div class="text-[0.75rem] text-[#8c9097] dark:text-white/50">1,674</div>
+                          </div>
+                        </li>
+                        <li class="success">
+                          <div class="flex items-center text-[0.813rem]  justify-between">
+                            <div>Renewal</div>
+                            <div class="text-[0.75rem] text-[#8c9097] dark:text-white/50">921</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end::main-content -->
+
+      </div>
+      <!-- include headersearch_modal.html"-->
+
+    </div>
+
+    <!-- include commonjs.html"-->
+
+    <!-- JSVector Maps JS -->
+    <script src="..\assets\libs\jsvectormap\js\jsvectormap.min.js"></script>
+
+    <!-- JSVector Maps MapsJS -->
+    <script src="..\assets\libs\jsvectormap\maps\world-merc.js"></script>
+
+    <!-- Apex Charts JS -->
+    <script src="..\assets\libs\apexcharts\apexcharts.min.js"></script>
+
+    <!-- Chartjs Chart JS -->
+    <script src="..\assets\libs\chart.js\chart.min.js"></script>
+
+    <!-- CRM-Dashboard -->
+    <script src="../assets/js/crm-dashboard.js"></script>
+
+    <!-- include custom_switcherjs.html"-->
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+
+</body>
+
+</html>
