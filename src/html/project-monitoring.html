@@ -1,0 +1,447 @@
+ <!-- include main-header.html"-->
+
+</head>
+
+<body>
+
+    <!-- include switcher.html"-->
+    <!-- include loader.html"-->
+    <div class="page">
+
+        <!-- include header.html"-->
+        <!-- include menu.html"-->
+
+
+        <!-- Start::content  -->
+        <div class="content">
+            <!-- Start::main-content -->
+           <div class="main-content">
+            <!-- Page Header -->
+            <div class="block justify-between page-header md:flex">
+                <div>
+                    <h3 class="!text-defaulttextcolor dark:!text-defaulttextcolor/70 dark:text-white dark:hover:text-white text-[1.125rem] font-semibold">Project Monitoring</h3>
+                    <p class="font-normal text-[#8c9097] dark:text-white/50 text-[0.813rem]">Track user projects in real-time, monitoring progress and engagement for insights.</p>
+                </div>
+            </div>
+            <!-- Page Header Close -->
+
+                <div class="grid grid-cols-12 gap-x-6">
+
+                <!--All projects section-->
+                <div class="xxl:col-span-12 xl:col-span-12 col-span-12">
+                    <div class="box custom-card">
+                      <div class="justify-between items-center w-full flex flex-col md:flex-row p-5 gap-5">
+                        <div class="box-title w-full">
+                          All projects
+                        </div>
+                        <div class="flex flex-col md:flex-row items-center justify-between gap-5 w-full">
+                            <form action="" method="get">
+                              <div>
+                                <input class="ti-form-control form-control-md" type="text" name="searchQuery" placeholder="Search by project name or full name"
+                                  aria-label=".form-control-sm example">
+                              </div>
+                            </form>
+                            <form action="" method="get" class="flex items-center justify-center gap-2">
+                              <div class="flex flex-col gap-[10px] items-start justify-start">
+                                <select name="filterProjects" id="" class="w-full p-1.5 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base font-normal leading-tight lg:leading-7">
+                                  <option value="AllProjects">All projects</option>
+                                  <option value="Status">Status</option>
+                                  <option value="Category">Category</option>
+                                  <option value="AlphabeticalOrder">Alphabetical order</option>
+                                </select>
+                              </div>
+                              <button class="flex items-center cursor-pointer border border-primary p-2 rounded-md justify-center">Apply</button>
+                            </form>
+                            <a href="" class="flex items-center cursor-pointer border border-primary p-2 rounded-md justify-center">Export to CSV</a>
+                        </div>
+                      </div>
+                      <div class="box-body">
+                        <div class="overflow-x-auto">
+                          <table class="table min-w-full whitespace-nowrap table-hover border table-bordered">
+                            <thead>
+                              <tr class="border border-inherit border-solid dark:border-defaultborder/10">
+                                <th scope="col" class="!text-start !text-[0.85rem]">Project Name</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">User</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">Status</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">Category</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">Date Created</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">Word Count</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">Actions</th>
+                              </tr>
+                            </thead>
+                            <tbody id="userData">
+                                <!--Recent 5 projects-->
+                                <!--Project row-->
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td class="line-clamp-1 w-60">Social media and mental health Social media and mental health</td>
+                                  <td>
+                                    <div class="flex items-center font-semibold">
+                                      <span class="!me-2 inline-flex justify-center items-center">
+                                        <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                      </span>Mayor Kelly 
+                                    </div>
+                                  </td>
+                                  <td>Ongoing</td>
+                                  <td>Research</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>2,452</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <!--Add project link inorder to view the project-->
+                                        <a href="">                                        
+                                          <div class="ti-btn ti-btn-sm ti-btn-success !rounded-full cursor-pointer editPassword">
+                                            <i class="las la-eye"></i>
+                                          </div>
+                                        </a>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteUser">
+                                          <!--Insert the project ID here also. It is very important to help open the right user modal-->
+                                          <p class="hidden">PR1245364875</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <!--End of row 1-->
+                                <!--Start of other rows-->
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td class="line-clamp-1 w-60">Social media and mental health Social media and mental health</td>
+                                  <td>
+                                    <div class="flex items-center font-semibold">
+                                      <span class="!me-2 inline-flex justify-center items-center">
+                                        <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                      </span>Mayor Kelly 
+                                    </div>
+                                  </td>
+                                  <td>Completed</td>
+                                  <td>Research</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>2,452</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <!--Add project link inorder to view the project-->
+                                        <a href="">                                        
+                                          <div class="ti-btn ti-btn-sm ti-btn-success !rounded-full cursor-pointer editPassword">
+                                            <i class="las la-eye"></i>
+                                          </div>
+                                        </a>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteUser">
+                                          <!--Insert the project ID here also. It is very important to help open the right user modal-->
+                                          <p class="hidden">PR1245364878</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td class="line-clamp-1 w-60">Social media and mental health Social media and mental health</td>
+                                  <td>
+                                    <div class="flex items-center font-semibold">
+                                      <span class="!me-2 inline-flex justify-center items-center">
+                                        <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                      </span>Mayor Kelly 
+                                    </div>
+                                  </td>
+                                  <td>Completed</td>
+                                  <td>Research</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>2,452</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <!--Add project link inorder to view the project-->
+                                        <a href="">                                        
+                                          <div class="ti-btn ti-btn-sm ti-btn-success !rounded-full cursor-pointer editPassword">
+                                            <i class="las la-eye"></i>
+                                          </div>
+                                        </a>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteUser">
+                                          <!--Insert the project ID here also. It is very important to help open the right user modal-->
+                                          <p class="hidden">PR1245364878</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td class="line-clamp-1 w-60">Social media and mental health Social media and mental health</td>
+                                  <td>
+                                    <div class="flex items-center font-semibold">
+                                      <span class="!me-2 inline-flex justify-center items-center">
+                                        <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                      </span>Mayor Kelly 
+                                    </div>
+                                  </td>
+                                  <td>Completed</td>
+                                  <td>Research</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>2,452</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <!--Add project link inorder to view the project-->
+                                        <a href="">                                        
+                                          <div class="ti-btn ti-btn-sm ti-btn-success !rounded-full cursor-pointer editPassword">
+                                            <i class="las la-eye"></i>
+                                          </div>
+                                        </a>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteUser">
+                                          <!--Insert the project ID here also. It is very important to help open the right user modal-->
+                                          <p class="hidden">PR1245364878</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td class="line-clamp-1 w-60">Social media and mental health Social media and mental health</td>
+                                  <td>
+                                    <div class="flex items-center font-semibold">
+                                      <span class="!me-2 inline-flex justify-center items-center">
+                                        <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                      </span>Mayor Kelly 
+                                    </div>
+                                  </td>
+                                  <td>Completed</td>
+                                  <td>Research</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>2,452</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <!--Add project link inorder to view the project-->
+                                        <a href="">                                        
+                                          <div class="ti-btn ti-btn-sm ti-btn-success !rounded-full cursor-pointer editPassword">
+                                            <i class="las la-eye"></i>
+                                          </div>
+                                        </a>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteUser">
+                                          <!--Insert the project ID here also. It is very important to help open the right user modal-->
+                                          <p class="hidden">PR1245364878</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td class="line-clamp-1 w-60">Social media and mental health Social media and mental health</td>
+                                  <td>
+                                    <div class="flex items-center font-semibold">
+                                      <span class="!me-2 inline-flex justify-center items-center">
+                                        <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                      </span>Mayor Kelly 
+                                    </div>
+                                  </td>
+                                  <td>Completed</td>
+                                  <td>Research</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>2,452</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <!--Add project link inorder to view the project-->
+                                        <a href="">                                        
+                                          <div class="ti-btn ti-btn-sm ti-btn-success !rounded-full cursor-pointer editPassword">
+                                            <i class="las la-eye"></i>
+                                          </div>
+                                        </a>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteUser">
+                                          <!--Insert the project ID here also. It is very important to help open the right user modal-->
+                                          <p class="hidden">PR1245364878</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td class="line-clamp-1 w-60">Social media and mental health Social media and mental health</td>
+                                  <td>
+                                    <div class="flex items-center font-semibold">
+                                      <span class="!me-2 inline-flex justify-center items-center">
+                                        <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                      </span>Mayor Kelly 
+                                    </div>
+                                  </td>
+                                  <td>Completed</td>
+                                  <td>Research</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>2,452</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <!--Add project link inorder to view the project-->
+                                        <a href="">                                        
+                                          <div class="ti-btn ti-btn-sm ti-btn-success !rounded-full cursor-pointer editPassword">
+                                            <i class="las la-eye"></i>
+                                          </div>
+                                        </a>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteUser">
+                                          <!--Insert the project ID here also. It is very important to help open the right user modal-->
+                                          <p class="hidden">PR1245364878</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td class="line-clamp-1 w-60">Social media and mental health Social media and mental health</td>
+                                  <td>
+                                    <div class="flex items-center font-semibold">
+                                      <span class="!me-2 inline-flex justify-center items-center">
+                                        <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                      </span>Mayor Kelly 
+                                    </div>
+                                  </td>
+                                  <td>Completed</td>
+                                  <td>Research</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>2,452</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <!--Add project link inorder to view the project-->
+                                        <a href="">                                        
+                                          <div class="ti-btn ti-btn-sm ti-btn-success !rounded-full cursor-pointer editPassword">
+                                            <i class="las la-eye"></i>
+                                          </div>
+                                        </a>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteUser">
+                                          <!--Insert the project ID here also. It is very important to help open the right user modal-->
+                                          <p class="hidden">PR1245364878</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td class="line-clamp-1 w-60">Social media and mental health Social media and mental health</td>
+                                  <td>
+                                    <div class="flex items-center font-semibold">
+                                      <span class="!me-2 inline-flex justify-center items-center">
+                                        <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                      </span>Mayor Kelly 
+                                    </div>
+                                  </td>
+                                  <td>Completed</td>
+                                  <td>Research</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>2,452</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <!--Add project link inorder to view the project-->
+                                        <a href="">                                        
+                                          <div class="ti-btn ti-btn-sm ti-btn-success !rounded-full cursor-pointer editPassword">
+                                            <i class="las la-eye"></i>
+                                          </div>
+                                        </a>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteUser">
+                                          <!--Insert the project ID here also. It is very important to help open the right user modal-->
+                                          <p class="hidden">PR1245364878</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td class="line-clamp-1 w-60">Social media and mental health Social media and mental health</td>
+                                  <td>
+                                    <div class="flex items-center font-semibold">
+                                      <span class="!me-2 inline-flex justify-center items-center">
+                                        <img class="inline-block rounded-full w-[32px] h-[32px] object-cover" src="../assets/images/faces/teamPhoto.png" alt="Image Description">
+                                      </span>Mayor Kelly 
+                                    </div>
+                                  </td>
+                                  <td>Completed</td>
+                                  <td>Research</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>2,452</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <!--Add project link inorder to view the project-->
+                                        <a href="">                                        
+                                          <div class="ti-btn ti-btn-sm ti-btn-success !rounded-full cursor-pointer editPassword">
+                                            <i class="las la-eye"></i>
+                                          </div>
+                                        </a>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteUser">
+                                          <!--Insert the project ID here also. It is very important to help open the right user modal-->
+                                          <p class="hidden">PR1245364878</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+
+                                <!--End of others row-->
+                                
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                    <div class="xl:col-span-4 col-span-12">
+                      <div class="box-footer">
+                          <div class="sm:flex items-center">
+                            <div class="text-defaulttextcolor dark:text-defaulttextcolor/70">
+                              Showing 10 Entries 
+                            </div>
+                            <div class="ms-auto">
+                              <nav aria-label="Page navigation" class="pagination-style-4">
+                                <ul class="ti-pagination mb-0">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="javascript:void(0);">
+                                            Prev
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link active" href="javascript:void(0);">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link !text-primary" href="javascript:void(0);">
+                                            next
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                </div>
+            </div>
+        </div>
+        <!-- End::content  -->
+
+        <!--Popups-->
+        <!--Delete project popup-->
+        <section id="delete-user-popup-section" class="p-6 w-full gap-[10px] lg:gap-[20px] hidden flex-col items-center justify-center top-0 h-full z-50 bg-black/70 fixed">
+          <div class="p-5 bg-white rounded-[20px] flex-col justify-start items-center gap-5 inline-flex w-full lg:w-[40%]">
+            <div class="flex items-center justify-center gap-[20px] w-full">
+              <h2 class="text-gray-900 text-xl lg:text-2xl font-bold leading-normal lg:leading-[44px] w-full text-center">Delete project</h2>
+              <div id="close-delete-user-form-popup" class="cursor-pointer text-xl lg:text-2xl"><i class="las la-times"></i></div>
+            </div>
+            <p class="text-gray-900 text-base lg:text-xl font-normal leading-loose lg:leading-normal w-full text-center">Are you sure you want to delete this project? This action cannot be undone.</p>
+            <!--Delete project form-->
+            <form action="" method="post" class="flex flex-col items-start justify-start gap-[20px] w-full">
+              <!--user project details to delete-->
+              <input type="text" class="hidden" value="" id="projectIDtoDelete">
+                <div class="flex items-center justify-between w-full gap-5">
+                  <button class="flex px-5 py-2.5 bg-red-500 text-white text-[16px] lg:text-xl font-medium  rounded-[10px] justify-center items-center gap-2.5 w-full">Delete</button>
+                  <div class="flex items-center justify-center cursor-pointer px-5 py-2.5 text-[16px] lg:text-xl border border-gray-900 w-full rounded-[10px]" id="cancelDelete">Cancel</div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- include headersearch_modal.html"-->
+
+    </div>
+
+    <!-- include commonjs.html"-->
+
+    <!-- include custom_switcherjs.html"-->
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/projectMonitoring.js"></script>
+
+</body>
+
+</html>
