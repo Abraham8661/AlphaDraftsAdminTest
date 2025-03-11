@@ -40,7 +40,7 @@
                         <div class="flex flex-col md:flex-row items-center justify-between gap-5 w-full">
                             <form action="" method="get">
                               <div>
-                                <input class="ti-form-control form-control-md" type="text" name="searchQuery" placeholder="Search by project name or full name"
+                                <input class="ti-form-control form-control-md" type="text" name="searchQuery" placeholder="Search by name or email"
                                   aria-label=".form-control-sm example">
                               </div>
                             </form>
@@ -51,6 +51,9 @@
                                   <option value="dateJoined">Date joined</option>
                                   <option value="status">Status</option>
                                   <option value="role">Role</option>
+                                  <option value="lastWeek">Last week</option>
+                                  <option value="lastMonth">Last month</option>
+                                  <option value="lastYear">Last year</option>
                                 </select>
                               </div>
                               <button class="flex items-center cursor-pointer border border-primary p-2 rounded-md justify-center">Apply</button>
@@ -357,8 +360,6 @@
                                   </td>
                                 </tr>
                                 <!--End of others row-->
-                                
-                                <!--Others-->
                                 
                             </tbody>
                           </table>
