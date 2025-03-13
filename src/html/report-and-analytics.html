@@ -1,0 +1,328 @@
+ <!-- include main-header.html"-->
+
+</head>
+
+<body>
+
+    <!-- include switcher.html"-->
+    <!-- include loader.html"-->
+    <div class="page">
+
+        <!-- include header.html"-->
+        <!-- include menu.html"-->
+
+        <!-- Start::content  -->
+        <div class="content">
+            <div class="main-content">
+                <!-- Page Header -->
+                <div class="block justify-between page-header md:flex">
+                    <div>
+                        <h3 class="!text-defaulttextcolor dark:!text-defaulttextcolor/70 dark:text-white dark:hover:text-white text-[1.125rem] font-semibold">Reports & Analytics</h3>
+                        <p class="font-normal text-[#8c9097] dark:text-white/50 text-[0.813rem]">Track user activity, feature usage, and subscription trends to make data-driven decisions.</p>
+                    </div>
+                </div>
+                <!-- Page Header Close -->
+
+                <div class="grid grid-cols-12 gap-x-6">
+                    <!--Subscription analytics-->
+                    <div class="xxxl:col-span-6 col-span-12">
+                        <div class="grid grid-cols-12 gap-x-6">
+                            <div class="col-span-12">
+                                <div class="box overflow-hidden">
+                                    <div class="box-header justify-between">
+                                        <div class="box-title">Subscriptions Analytics</div>
+                                        <div class="hs-dropdown ti-dropdown">
+                                            <a href="javascript:void(0);" class="text-[0.75rem] px-2 font-normal text-[#8c9097] dark:text-white/50"
+                                              aria-expanded="false">
+                                              View All<i class="ri-arrow-down-s-line align-middle ms-1 inline-block"></i>
+                                            </a>
+                                            <ul class="hs-dropdown-menu ti-dropdown-menu hidden" role="menu">
+                                              <li><button type="button" id="todayBtn" class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block">Today</button></li>
+                                              <li><button type="button" id="weekBtn" class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block">This week</button></li>
+                                              <li><button type="button" id="monthBtn" class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block">This month</button></li>
+                                              <li><button type="button" id="yearBtn" class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block">This year</button></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div class="box-body !p-0">
+                                        <div class="grid grid-cols-12 border-bottom border-block-end-dashed">
+                                            <div class="xxl:col-span-3 xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-3 col-span-12">
+                                                <!--Total Subscriptions-->
+                                                <div class="p-3 sm:border-e !border-0 sm:text-start text-center">
+                                                    <p class="text-[1.25rem] font-semibold mb-0"><span id="total-subscriptions"></span></p>
+                                                    <p class="mb-0 text-[#8c9097] dark:text-white/50">Total Subscriptions</p>
+                                                </div>
+                                            </div>
+                                            <div class="xxl:col-span-3 xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-3 col-span-12">
+                                                <!--Free Plan-->
+                                                <div class="p-3 sm:border-e !border-0 sm:text-start text-center">
+                                                    <p class="text-[1.25rem] font-semibold mb-0"><span id="free-subscription"></span></p>
+                                                    <p class="mb-0 text-[#8c9097] dark:text-white/50">Free Plan</p>
+                                                </div>
+                                            </div>
+                                            <div class="xxl:col-span-3 xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-3 col-span-12">
+                                                <!--Premium Plan-->
+                                                <div class="p-3 sm:border-e !border-0 sm:text-start text-center">
+                                                    <p class="text-[1.25rem] font-semibold mb-0"><span id="premium-subscription"></span></p>
+                                                    <p class="mb-0 text-[#8c9097] dark:text-white/50">Premium Plan</p>
+                                                </div>
+                                            </div>
+                                            <div class="xxl:col-span-3 xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-3 col-span-12">
+                                                <!--Enterprise Plan-->
+                                                <div class="p-3 sm:text-start !border-0 text-center">
+                                                    <p class="text-[1.25rem] font-semibold mb-0"><span id="enterprise-subscription"></span></p>
+                                                    <p class="mb-0 text-[#8c9097] dark:text-white/50">Enterprise Plan</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Chart js can be found in this file - report-and-analytics.js-->
+                                        <div id="area-stacked"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Subscription Status analytics-->
+                    <div class="xxxl:col-span-6 col-span-12">
+                        <div class="grid grid-cols-12 gap-x-6">
+                            <div class="col-span-12">
+                                <div class="box overflow-hidden">
+                                    <div class="box-header justify-between">
+                                        <div class="box-title">Subscriptions Status Analytics</div>
+                                        <div class="hs-dropdown ti-dropdown">
+                                            <a href="javascript:void(0);" class="text-[0.75rem] px-2 font-normal text-[#8c9097] dark:text-white/50"
+                                              aria-expanded="false">
+                                              View All<i class="ri-arrow-down-s-line align-middle ms-1 inline-block"></i>
+                                            </a>
+                                            <ul class="hs-dropdown-menu ti-dropdown-menu hidden" role="menu">
+                                              <li><button type="button" id="todayBtn3" class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block">Today</button></li>
+                                              <li><button type="button" id="weekBtn3" class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block">This week</button></li>
+                                              <li><button type="button" id="monthBtn3" class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block">This month</button></li>
+                                              <li><button type="button" id="yearBtn3" class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block">This year</button></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div class="box-body !p-0">
+                                        <div class="grid grid-cols-12 border-bottom border-block-end-dashed">
+                                            <div class="xxl:col-span-3 xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-3 col-span-12">
+                                                <!--Successful-->
+                                                <div class="p-3 sm:border-e !border-0 sm:text-start text-center">
+                                                    <p class="text-[1.25rem] font-semibold mb-0"><span id="total-subscriptions3"></span></p>
+                                                    <p class="mb-0 text-[#8c9097] dark:text-white/50">Successful</p>
+                                                </div>
+                                            </div>
+                                            <div class="xxl:col-span-3 xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-3 col-span-12">
+                                                <!--Declined-->
+                                                <div class="p-3 sm:border-e !border-0 sm:text-start text-center">
+                                                    <p class="text-[1.25rem] font-semibold mb-0"><span id="free-subscription3"></span></p>
+                                                    <p class="mb-0 text-[#8c9097] dark:text-white/50">Declined</p>
+                                                </div>
+                                            </div>
+                                            <div class="xxl:col-span-3 xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-3 col-span-12">
+                                                <!--Cancelled-->
+                                                <div class="p-3 sm:border-e !border-0 sm:text-start text-center">
+                                                    <p class="text-[1.25rem] font-semibold mb-0"><span id="premium-subscription3"></span></p>
+                                                    <p class="mb-0 text-[#8c9097] dark:text-white/50">Cancelled</p>
+                                                </div>
+                                            </div>
+                                            <div class="xxl:col-span-3 xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-3 col-span-12">
+                                                <!--Renewals-->
+                                                <div class="p-3 sm:text-start !border-0 text-center">
+                                                    <p class="text-[1.25rem] font-semibold mb-0"><span id="enterprise-subscription3"></span></p>
+                                                    <p class="mb-0 text-[#8c9097] dark:text-white/50">Renewals</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Chart js can be found in this file - report-and-analytics.js-->
+                                        <div id="area-stacked3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Revenue analytics-->
+                    <div class="xxxl:col-span-6 col-span-12">
+                        <div class="grid grid-cols-12 gap-x-6">
+                            <div class="col-span-12">
+                                <div class="box overflow-hidden">
+                                    <div class="box-header justify-between">
+                                        <div class="box-title">Revenue Analytics</div>
+                                        <div class="hs-dropdown ti-dropdown">
+                                            <a href="javascript:void(0);" class="text-[0.75rem] px-2 font-normal text-[#8c9097] dark:text-white/50"
+                                              aria-expanded="false">
+                                              View All<i class="ri-arrow-down-s-line align-middle ms-1 inline-block"></i>
+                                            </a>
+                                            <ul class="hs-dropdown-menu ti-dropdown-menu hidden" role="menu">
+                                              <li><button type="button" id="todayBtn2" class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block">Today</button></li>
+                                              <li><button type="button" id="weekBtn2" class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block">This week</button></li>
+                                              <li><button type="button" id="monthBtn2" class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block">This month</button></li>
+                                              <li><button type="button" id="yearBtn2" class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block">This year</button></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div class="box-body !p-0">
+                                        <div class="grid grid-cols-12 border-bottom border-block-end-dashed">
+                                            <div class="xxl:col-span-3 xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-3 col-span-12">
+                                                <!--Total Subscriptions-->
+                                                <div class="p-3 sm:border-e !border-0 sm:text-start text-center">
+                                                    <p class="text-[1.25rem] font-semibold mb-0"><span id="total-subscriptions2"></span></p>
+                                                    <p class="mb-0 text-[#8c9097] dark:text-white/50">Total Revenue</p>
+                                                </div>
+                                            </div>
+                                            <div class="xxl:col-span-3 xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-3 col-span-12">
+                                                <!--Premium Plan-->
+                                                <div class="p-3 sm:border-e !border-0 sm:text-start text-center">
+                                                    <p class="text-[1.25rem] font-semibold mb-0"><span id="premium-subscription2"></span></p>
+                                                    <p class="mb-0 text-[#8c9097] dark:text-white/50">Premium Plan</p>
+                                                </div>
+                                            </div>
+                                            <div class="xxl:col-span-3 xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-3 col-span-12">
+                                                <!--Enterprise Plan-->
+                                                <div class="p-3 sm:text-start !border-0 text-center">
+                                                    <p class="text-[1.25rem] font-semibold mb-0"><span id="enterprise-subscription2"></span></p>
+                                                    <p class="mb-0 text-[#8c9097] dark:text-white/50">Enterprise Plan</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Chart js can be found in this file - report-and-analytics.js-->
+                                        <div id="area-stacked2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Projects analytics-->
+                    <div class="xxxl:col-span-6 col-span-12">
+                        <div class="grid grid-cols-12 gap-x-6">
+                            <div class="col-span-12">
+                                <div class="box overflow-hidden">
+                                    <div class="box-header justify-between">
+                                        <div class="box-title">Projects Analytics</div>
+                                        <div class="hs-dropdown ti-dropdown">
+                                            <a href="javascript:void(0);" class="text-[0.75rem] px-2 font-normal text-[#8c9097] dark:text-white/50"
+                                              aria-expanded="false">
+                                              View All<i class="ri-arrow-down-s-line align-middle ms-1 inline-block"></i>
+                                            </a>
+                                            <ul class="hs-dropdown-menu ti-dropdown-menu hidden" role="menu">
+                                              <li><button type="button" id="todayBtn4" class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block">Today</button></li>
+                                              <li><button type="button" id="weekBtn4" class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block">This week</button></li>
+                                              <li><button type="button" id="monthBtn4" class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block">This month</button></li>
+                                              <li><button type="button" id="yearBtn4" class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block">This year</button></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div class="box-body !p-0">
+                                        <div class="grid grid-cols-12 border-bottom border-block-end-dashed">
+                                            <div class="xxl:col-span-3 xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-3 col-span-12">
+                                                <!--Total Projects-->
+                                                <div class="p-3 sm:border-e !border-0 sm:text-start text-center">
+                                                    <p class="text-[1.25rem] font-semibold mb-0"><span id="total-subscriptions4"></span></p>
+                                                    <p class="mb-0 text-[#8c9097] dark:text-white/50">Total Projects</p>
+                                                </div>
+                                            </div>
+                                            <div class="xxl:col-span-3 xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-3 col-span-12">
+                                                <!--Completed Projects-->
+                                                <div class="p-3 sm:border-e !border-0 sm:text-start text-center">
+                                                    <p class="text-[1.25rem] font-semibold mb-0"><span id="premium-subscription4"></span></p>
+                                                    <p class="mb-0 text-[#8c9097] dark:text-white/50">Completed Projects</p>
+                                                </div>
+                                            </div>
+                                            <div class="xxl:col-span-3 xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-3 col-span-12">
+                                                <!--Ongoing Projects-->
+                                                <div class="p-3 sm:text-start !border-0 text-center">
+                                                    <p class="text-[1.25rem] font-semibold mb-0"><span id="enterprise-subscription4"></span></p>
+                                                    <p class="mb-0 text-[#8c9097] dark:text-white/50">Ongoing Projects</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Chart js can be found in this file - report-and-analytics.js-->
+                                        <div id="area-stacked4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Users analytics-->
+                    <div class="xxxl:col-span-6 col-span-12">
+                        <div class="grid grid-cols-12 gap-x-6">
+                            <div class="col-span-12">
+                                <div class="box overflow-hidden">
+                                    <div class="box-header justify-between">
+                                        <div class="box-title">Users Analytics</div>
+                                        <div class="hs-dropdown ti-dropdown">
+                                            <a href="javascript:void(0);" class="text-[0.75rem] px-2 font-normal text-[#8c9097] dark:text-white/50"
+                                              aria-expanded="false">
+                                              View All<i class="ri-arrow-down-s-line align-middle ms-1 inline-block"></i>
+                                            </a>
+                                            <ul class="hs-dropdown-menu ti-dropdown-menu hidden" role="menu">
+                                              <li><button type="button" id="todayBtn5" class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block">Today</button></li>
+                                              <li><button type="button" id="weekBtn5" class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block">This week</button></li>
+                                              <li><button type="button" id="monthBtn5" class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block">This month</button></li>
+                                              <li><button type="button" id="yearBtn5" class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block">This year</button></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div class="box-body !p-0">
+                                        <div class="grid grid-cols-12 border-bottom border-block-end-dashed">
+                                            <div class="xxl:col-span-3 xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-3 col-span-12">
+                                                <!--Total Projects-->
+                                                <div class="p-3 sm:border-e !border-0 sm:text-start text-center">
+                                                    <p class="text-[1.25rem] font-semibold mb-0"><span id="total-subscriptions5"></span></p>
+                                                    <p class="mb-0 text-[#8c9097] dark:text-white/50">Total Users</p>
+                                                </div>
+                                            </div>
+                                            <div class="xxl:col-span-3 xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-3 col-span-12">
+                                                <!--Completed Projects-->
+                                                <div class="p-3 sm:border-e !border-0 sm:text-start text-center">
+                                                    <p class="text-[1.25rem] font-semibold mb-0"><span id="premium-subscription5"></span></p>
+                                                    <p class="mb-0 text-[#8c9097] dark:text-white/50">Active Users</p>
+                                                </div>
+                                            </div>
+                                            <div class="xxl:col-span-3 xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-3 col-span-12">
+                                                <!--Ongoing Projects-->
+                                                <div class="p-3 sm:text-start !border-0 text-center">
+                                                    <p class="text-[1.25rem] font-semibold mb-0"><span id="enterprise-subscription5"></span></p>
+                                                    <p class="mb-0 text-[#8c9097] dark:text-white/50">Inactive Users</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Chart js can be found in this file - report-and-analytics.js-->
+                                        <div id="area-stacked5"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        <!-- End::content  -->
+
+        <!-- include headersearch_modal.html"-->
+
+    </div>
+
+    <!-- include commonjs.html"-->
+
+    <!-- Apex Charts JS -->
+    <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!---Used In Basic Area Chart-->
+    <script src="../assets/js/apexcharts-stock-prices.js"></script>
+
+    <!-- Used For Secection-Github Style Chart -->
+    <script src="../assets/js/apex-github-data.js"></script>
+
+    <!-- Used For Irregular Time Series Chart -->
+    <script src="../assets/js/apexcharts-irregulardata.js"></script>
+    <script src="../assets/libs/moment/moment.js"></script>
+
+    <!-- Internal Apex Area Charts JS -->
+    <script src="../assets/js/report-and-analytics.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+
+</body>
+
+</html>
