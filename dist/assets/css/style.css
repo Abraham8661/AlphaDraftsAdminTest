@@ -40454,6 +40454,10 @@ h6 {
 .text-white\/\[\.5\] {
   color: rgb(255 255 255 / .5);
 }
+.text-\[\#ff3b30\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 59 48 / var(--tw-text-opacity, 1));
+}
 .text-opacity-100 {
   --tw-text-opacity: 1;
 }

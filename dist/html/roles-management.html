@@ -1658,775 +1658,211 @@
 </aside>
 <!-- End::app-sidebar -->
 
+
         <!-- Start::content  -->
         <div class="content">
-            <div class="main-content">
-                <!-- Page Header -->
-                <div class="block justify-between page-header md:flex">
-                    <div>
-                        <h3 class="!text-defaulttextcolor dark:!text-defaulttextcolor/70 dark:text-white dark:hover:text-white text-[1.125rem] font-semibold"> Analytics</h3>
-                    </div>
-                    <ol class="flex items-center whitespace-nowrap min-w-0">
-                        <li class="text-[0.813rem] ps-[0.5rem]">
-                          <a class="flex items-center text-primary hover:text-primary dark:text-primary truncate" href="javascript:void(0);">
-                            Dashboards
-                            <i class="ti ti-chevrons-right flex-shrink-0 text-[#8c9097] dark:text-white/50 px-[0.5rem] overflow-visible rtl:rotate-180"></i>
-                          </a>
-                        </li>
-                        <li class="text-[0.813rem] text-defaulttextcolor font-semibold hover:text-primary dark:text-[#8c9097] dark:text-white/50 " aria-current="page">
-                            Analytics
-                        </li>
-                    </ol>
+            <!-- Start::main-content -->
+           <div class="main-content">
+            <!-- Page Header -->
+            <div class="block justify-between page-header md:flex">
+                <div>
+                    <h3 class="!text-defaulttextcolor dark:!text-defaulttextcolor/70 dark:text-white dark:hover:text-white text-[1.125rem] font-semibold">Roles Management</h3>
+                    <p class="font-normal text-[#8c9097] dark:text-white/50 text-[0.813rem]">Manage user roles and permissions to control access within the admin dashboard.</p>
                 </div>
-                <!-- Page Header Close -->
-                <div class="grid grid-cols-12 gap-x-6">
-                    <div class="xl:col-span-7 col-span-12">
-                        <div class="grid grid-cols-12 gap-x-6">
-                        <div class="xl:col-span-4 lg:col-span-4 md:col-span-4 sm:col-span-6 col-span-12">
-                            <div class="box">
-                                <div class="box-body">
-                                    <div class="flex flex-wrap items-center justify-between">
-                                        <div>
-                                            <h6 class="font-semibold mb-3 text-[1rem]">Total Users</h6>
-                                            <span class="text-[1.5625rem] font-semibold">9,789</span>
-                                            <span class="block text-success text-[0.75rem]">+0.892 <i class="ti ti-trending-up ms-1"></i></span>
-                                        </div>
-                                        <div id="analytics-users"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="xl:col-span-4 lg:col-span-4 md:col-span-4 sm:col-span-6 col-span-12">
-                            <div class="box">
-                                <div class="box-body">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <h6 class="font-semibold mb-3 text-[1rem]">Live Visitors</h6>
-                                            <span class="text-[1.5625rem] font-semibold">12,240</span>
-                                            <span class="block text-danger text-[0.75rem]">+0.59<i class="ti ti-trending-down ms-1 inline-flex"></i></span>
-                                        </div>
-                                        <div>
-                                            <span class="avatar avatar-md bg-secondary text-white">
-                                                <i class="ri-user-3-line"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="xl:col-span-4 lg:col-span-4 md:col-span-4 sm:col-span-6 col-span-12">
-                            <div class="box overflow-hidden">
-                                <div class="box-body mb-3">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <h6 class="font-semibold text-primary mb-4 text-[1rem]">Bounce Rate</h6>
-                                            <span class="text-[1.5625rem] flex items-center">77.3% <span class=" text-[0.75rem] text-warning opacity-[0.7] ms-2">+0.59<i class="ti ti-arrow-big-up-line ms-1 inline-flex"></i></span></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="analytics-bouncerate" class="mt-1 w-full"></div>
-                            </div>
-                        </div>
-                        <div class="xl:col-span-12 col-span-12">
-                            <div class="box">
-                                <div class="box-header justify-between">
-                                    <div class="box-title">
-                                        Audience Report
-                                    </div>
-                                    <div>
-                                        <button type="button" class="ti-btn ti-btn-primary ti-btn-wave !font-medium"><i class="ri-share-forward-line me-1 align-middle inline-block"></i>Export</button>
-                                    </div>
-                                </div>
-                                <div class="box-body">
-                                    <div id="audienceReport"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="xxl:col-span-6 xl:col-span-12 col-span-12">
-                            <div class="box">
-                                <div class="box-header justify-between">
-                                    <div class="box-title">
-                                        Top Countries Sessions vs Bounce Rate
-                                    </div>
-                                    <div class="hs-dropdown ti-dropdown">
-                                        <a href="javascript:void(0);" class="px-2 font-normal text-[0.75rem] text-[#8c9097] dark:text-white/50"
-                                          aria-expanded="false">
-                                          View All<i class="ri-arrow-down-s-line align-middle ms-1 inline-block"></i>
-                                        </a>
-                                        <ul class="hs-dropdown-menu ti-dropdown-menu hidden" role="menu">
-                                          <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
-                                              href="javascript:void(0);">Today</a></li>
-                                          <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
-                                              href="javascript:void(0);">This Week</a></li>
-                                          <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
-                                              href="javascript:void(0);">Last Week</a></li>
-                                        </ul>
-                                      </div>
-                                </div>
-                                <div class="box-body">
-                                    <div id="country-sessions"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="xxl:col-span-6 xl:col-span-12 col-span-12">
-                            <div class="box overflow-hidden">
-                                <div class="box-header justify-between">
-                                    <div class="box-title">
-                                        Traffic Sources
-                                    </div>
-                                    <div class="hs-dropdown ti-dropdown">
-                                        <a href="javascript:void(0);" class="px-2 font-normal text-[0.75rem] text-[#8c9097] dark:text-white/50"
-                                          aria-expanded="false">
-                                          View All<i class="ri-arrow-down-s-line align-middle ms-1 inline-block"></i>
-                                        </a>
-                                        <ul class="hs-dropdown-menu ti-dropdown-menu hidden" role="menu">
-                                          <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
-                                              href="javascript:void(0);">Today</a></li>
-                                          <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
-                                              href="javascript:void(0);">This Week</a></li>
-                                          <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
-                                              href="javascript:void(0);">Last Week</a></li>
-                                        </ul>
-                                      </div>
-                                </div>
-                                <div class="box-body !p-0">
-                                    <div class="table-responsive">
-                                        <table class="table table-hover whitespace-nowrap min-w-full">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col" class="text-start">Browser</th>
-                                                    <th scope="col" class="text-start">Sessions</th>
-                                                    <th scope="col" class="text-start">Traffic</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="border-t border-inherit border-solid hover:bg-gray-100 dark:hover:bg-light dark:border-defaultborder/10">
-                                                    <td>
-                                                        <div class="flex items-center">
-                                                            <span class="avatar avatar-rounded avatar-sm p-2 bg-light me-2">
-                                                                <i class="ri-google-fill text-[1.125rem] text-primary"></i>
-                                                            </span>
-                                                            <div class="font-semibold">Google</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <span><i class="ri-arrow-up-s-fill me-1 text-success align-middle text-[1.125rem]"></i>23,379</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="progress progress-xs">
-                                                            <div class="progress-bar bg-primary w-[78%]" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr class="border-t border-inherit border-solid hover:bg-gray-100 dark:hover:bg-light dark:border-defaultborder/10">
-                                                    <td>
-                                                        <div class="flex items-center">
-                                                            <span class="avatar avatar-rounded avatar-sm p-2 bg-light me-2">
-                                                                <i class="ri-safari-line text-[1.125rem] text-secondary"></i>
-                                                            </span>
-                                                            <div class="font-semibold">Safari</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <span><i class="ri-arrow-up-s-fill me-1 text-success align-middle text-[1.125rem]"></i>78,973</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="progress progress-xs">
-                                                            <div class="progress-bar bg-primary w-[32%]" role="progressbar" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100">
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr class="border-t border-inherit border-solid hover:bg-gray-100 dark:hover:bg-light dark:border-defaultborder/10">
-                                                    <td>
-                                                        <div class="flex items-center">
-                                                            <span class="avatar avatar-rounded avatar-sm p-2 bg-light me-2">
-                                                                <i class="ri-opera-fill text-[1.125rem] text-success"></i>
-                                                            </span>
-                                                            <div class="font-semibold">Opera</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <span><i class="ri-arrow-down-s-fill me-1 text-danger align-middle text-[1.125rem]"></i>12,457</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="progress progress-xs">
-                                                            <div class="progress-bar bg-primary w-[21%]" role="progressbar" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100">
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr class="border-t border-inherit border-solid hover:bg-gray-100 dark:hover:bg-light dark:border-defaultborder/10">
-                                                    <td>
-                                                        <div class="flex items-center">
-                                                            <span class="avatar avatar-rounded avatar-sm p-2 bg-light me-2">
-                                                                <i class="ri-edge-fill text-[1.125rem] text-info"></i>
-                                                            </span>
-                                                            <div class="font-semibold">Edge</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <span><i class="ri-arrow-up-s-fill me-1 text-success align-middle text-[1.125rem]"></i>8,570</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="progress progress-xs">
-                                                            <div class="progress-bar bg-primary w-1/4" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr class="border-t border-inherit border-solid hover:bg-gray-100 dark:hover:bg-light dark:border-defaultborder/10">
-                                                    <td>
-                                                        <div class="flex items-center">
-                                                            <span class="avatar avatar-rounded avatar-sm p-2 bg-light me-2">
-                                                                <i class="ri-firefox-fill text-[1.125rem] text-warning"></i>
-                                                            </span>
-                                                            <div class="font-semibold">Firefox</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <span><i class="ri-arrow-down-s-fill me-1 text-danger align-middle text-[1.125rem]"></i>6,135</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="progress progress-xs">
-                                                            <div class="progress-bar bg-primary w-[35%]" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr class="border-t border-inherit border-solid hover:bg-gray-100 dark:hover:bg-light dark:border-defaultborder/10">
-                                                    <td class="border-bottom-0">
-                                                        <div class="flex items-center">
-                                                            <span class="avatar avatar-rounded avatar-sm p-2 bg-light me-2">
-                                                                <i class="ri-ubuntu-fill text-[1.125rem] text-danger"></i>
-                                                            </span>
-                                                            <div class="font-semibold">Ubuntu</div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="border-bottom-0">
-                                                        <span><i class="ri-arrow-up-s-fill me-1 text-success align-middle text-[1.125rem]"></i>4,789</span>
-                                                    </td>
-                                                    <td class="border-bottom-0">
-                                                        <div class="progress progress-xs">
-                                                            <div class="progress-bar bg-primary w-[12%]" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100">
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       </div>
-                    </div>
-                    <div class="xl:col-span-5 col-span-12">
-                        <div class="grid grid-cols-12 gap-x-6">
-                            <div class="xxl:col-span-5 cxl:ol-span-12 col-span-12">
-                                <div class="box custom-card upgrade-card text-white">
-                                    <div class="box-body text-white">
-                                        <span class="avatar avatar-xxl !border-0">
-                                            <img src="../assets/images/media/media-84.png" alt="">
-                                        </span>
-                                        <div class="upgrade-card-content">
-                                            <span class="opacity-[0.7] font-normal mb-1 !text-white">Plan is expiring !</span>
-                                            <span class="text-[0.9375rem] font-semibold block mb-[3rem] upgrade-text !text-white">Upgrade to premium</span>
-                                            <button type="button" class="ti-btn !py-1 !px-2 bg-light text-defaulttextcolor !text-[0.75rem] font-medium ti-btn-wave">Upgrade Now</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="box">
-                                    <div class="box-body !p-1">
-                                        <div class="flex items-center flex-wrap">
-                                            <div id="analytics-followers"></div>
-                                            <div class="ms-1">
-                                                <p class="mb-1 text-[#8c9097] dark:text-white/50">Impressions</p>
-                                                <h5 class="font-semibold mb-0 text-[1.25rem]">9,903</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="box">
-                                    <div class="box-body !p-1">
-                                        <div class="flex items-center flex-wrap">
-                                            <div id="analytics-views"></div>
-                                            <div class="ms-1">
-                                                <p class="mb-1 text-[#8c9097] dark:text-white/50">Clicks</p>
-                                                <h5 class="font-semibold mb-0 text-[1.25rem]">16,789</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="xxl:col-span-7 xl:col-span-12 col-span-12">
-                                <div class="box">
-                                    <div class="box-header justify-between">
-                                        <div class="box-title">
-                                            Sessions By Device
-                                        </div>
-                                        <div>
-                                            <button type="button" class="ti-btn ti-btn-primary 1 !text-[0.85rem] !m-0 !font-medium">View All</button>
-                                        </div>
-                                    </div>
-                                    <div class="box-body !my-2 !py-6 !px-2">
-                                        <div id="sessions"></div>
-                                    </div>
-                                    <div class="box-footer !p-0">
-                                        <div class="grid grid-cols-12 justify-center">
-                                            <div class="col-span-3 pe-0 text-center">
-                                                <div class="sm:p-4  p-2 ">
-                                                    <span class="text-[#8c9097] dark:text-white/50 text-[0.6875rem]">Mobile</span>
-                                                    <span class="block text-[1rem] font-semibold">68.3%</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-span-3 px-0 text-center">
-                                                <div class="sm:p-4 p-2">
-                                                    <span class="text-[#8c9097] dark:text-white/50 text-[0.6875rem]">Tablet</span>
-                                                    <span class="block text-[1rem] font-semibold">17.68%</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-span-3 px-0 text-center">
-                                                <div class="sm:p-4 p-2 ">
-                                                    <span class="text-[#8c9097] dark:text-white/50 text-[0.6875rem]">Desktop</span>
-                                                    <span class="block text-[1rem] font-semibold">10.5%</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-span-3 px-0 text-center">
-                                                <div class="sm:p-4 p-2">
-                                                    <span class="text-[#8c9097] dark:text-white/50 text-[0.6875rem]">Others</span>
-                                                    <span class="block text-[1rem] font-semibold">5.16%</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="xl:col-span-12 col-span-12">
-                                <div class="box">
-                                    <div class="box-header justify-between">
-                                        <div class="box-title">Sessions Duration By New Users</div>
-                                        <div class="hs-dropdown ti-dropdown">
-                                            <a href="javascript:void(0);" class="px-2 font-normal text-[0.75rem] text-[#8c9097] dark:text-white/50"
-                                              aria-expanded="false">
-                                              View All<i class="ri-arrow-down-s-line align-middle ms-1 inline-block"></i>
-                                            </a>
-                                            <ul class="hs-dropdown-menu ti-dropdown-menu hidden" role="menu">
-                                              <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
-                                                  href="javascript:void(0);">Today</a></li>
-                                              <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
-                                                  href="javascript:void(0);">This Week</a></li>
-                                              <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
-                                                  href="javascript:void(0);">Last Week</a></li>
-                                            </ul>
-                                          </div>
-                                    </div>
-                                    <div class="box-body">
-                                        <div id="session-users"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div id="create-new-notication" class="flex items-center cursor-pointer bg-primary text-white p-2 rounded-md justify-center gap-1">
+                    <i class='bx bx-message-alt-add'></i>
+                    Create role
                 </div>
-                <div class="grid grid-cols-12 gap-x-6">
-                    <div class="xl:col-span-9 col-span-12">
-                        <div class="box">
-                            <div class="box-header justify-between">
-                                <div class="box-title">
-                                    Visitors By Channel Report
-                                </div>
-                                <div class="flex flex-wrap">
-                                    <div class="me-3 my-1">
-                                        <input class="ti-form-control form-control-sm" type="text" placeholder="Search Here" aria-label=".form-control-sm example">
-                                    </div>
-                                    <div class="hs-dropdown ti-dropdown my-1">
-                                        <a href="javascript:void(0);"
-                                          class="ti-btn ti-btn-primary !bg-primary !text-white !py-1 !px-2 !text-[0.75rem] !m-0 !gap-0 !font-medium"
-                                          aria-expanded="false">
-                                          Sort By<i class="ri-arrow-down-s-line align-middle ms-1 inline-block"></i>
-                                        </a>
-                                        <ul class="hs-dropdown-menu ti-dropdown-menu hidden" role="menu">
-                                          <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
-                                              href="javascript:void(0);">New</a></li>
-                                          <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
-                                              href="javascript:void(0);">Popular</a></li>
-                                          <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
-                                              href="javascript:void(0);">Relevant</a></li>
-                                        </ul>
-                                      </div>
-                                </div>
-                            </div>
-                            <div class="box-body">
-                                <div class="table-responsive">
-                                    <table class="table table-hover whitespace-nowrap table-bordered min-w-full">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col" class="text-start">S.No</th>
-                                                <th scope="col" class="text-start">Channel</th>
-                                                <th scope="col" class="text-start">Sessions</th>
-                                                <th scope="col" class="text-start">Bounce Rate</th>
-                                                <th scope="col" class="text-start">Avg Session Duration</th>
-                                                <th scope="col" class="text-start">Goal Completed</th>
-                                                <th scope="col" class="text-start">Pages Per Session</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="border-t border-inherit border-solid hover:bg-gray-100 dark:hover:bg-light dark:border-defaultborder/10">
-                                                <th scope="row" class="!text-start">
-                                                    1
-                                                </th>
-                                                <td>
-                                                    <div class="flex items-center">
-                                                        <span class="avatar avatar-sm !mb-0 bg-primary/10 avatar-rounded">
-                                                            <i class="ri-search-2-line text-[0.9375rem] font-semibiold text-primary"></i>
-                                                        </span>
-                                                        <span class="ms-2">
-                                                            Organic Search
-                                                        </span>
-                                                    </div>
-                                                </td>
-                                                <td>782</td>
-                                                <td>32.09%</td>
-                                                <td>
-                                                    0 hrs : 0 mins : 32 secs
-                                                </td>
-                                                <td>
-                                                    <span class="badge bg-primary/10 text-primary">278</span>
-                                                </td>
-                                                <td>
-                                                    2.9
-                                                </td>
-                                            </tr>
-                                            <tr class="border-t border-inherit border-solid hover:bg-gray-100 dark:hover:bg-light dark:border-defaultborder/10">
-                                                <th scope="row" class="!text-start">
-                                                    2
-                                                </th>
-                                                <td>
-                                                    <div class="flex items-center">
-                                                        <span class="avatar avatar-sm !mb-0 bg-secondary/10 avatar-rounded">
-                                                            <i class="ri-globe-line text-[0.9375rem] font-semibiold text-secondary"></i>
-                                                        </span>
-                                                        <span class="ms-2">
-                                                            Direct
-                                                        </span>
-                                                    </div>
-                                                </td>
-                                                <td>882</td>
-                                                <td>39.38%</td>
-                                                <td>
-                                                    0 hrs : 2 mins : 45 secs
-                                                </td>
-                                                <td>
-                                                    <span class="badge bg-secondary/10 text-secondary">782</span>
-                                                </td>
-                                                <td>
-                                                    1.5
-                                                </td>
-                                            </tr>
-                                            <tr class="border-t border-inherit border-solid hover:bg-gray-100 dark:hover:bg-light dark:border-defaultborder/10">
-                                                <th scope="row" class="!text-start">
-                                                    3
-                                                </th>
-                                                <td>
-                                                    <div class="flex items-center">
-                                                        <span class="avatar avatar-sm !mb-0 bg-success/10 avatar-rounded">
-                                                            <i class="ri-share-forward-line text-[0.9375rem] font-semibiold text-success"></i>
-                                                        </span>
-                                                        <span class="ms-2">
-                                                            Referral
-                                                        </span>
-                                                    </div>
-                                                </td>
-                                                <td>322</td>
-                                                <td>22.67%</td>
-                                                <td>
-                                                    0 hrs : 38 mins : 28 secs
-                                                </td>
-                                                <td>
-                                                    <span class="badge bg-success/10 text-success">622</span>
-                                                </td>
-                                                <td>
-                                                    3.2
-                                                </td>
-                                            </tr>
-                                            <tr class="border-t border-inherit border-solid hover:bg-gray-100 dark:hover:bg-light dark:border-defaultborder/10">
-                                                <th scope="row" class="!text-start">
-                                                    4
-                                                </th>
-                                                <td>
-                                                    <div class="flex items-center">
-                                                        <span class="avatar avatar-sm !mb-0 bg-info/10 avatar-rounded">
-                                                            <i class="ri-reactjs-line text-[0.9375rem] font-semibiold text-info"></i>
-                                                        </span>
-                                                        <span class="ms-2">
-                                                            Social
-                                                        </span>
-                                                    </div>
-                                                </td>
-                                                <td>389</td>
-                                                <td>25.11%</td>
-                                                <td>
-                                                    0 hrs : 12 mins : 89 secs
-                                                </td>
-                                                <td>
-                                                    <span class="badge bg-info/10 text-info">142</span>
-                                                </td>
-                                                <td>
-                                                    1.4
-                                                </td>
-                                            </tr>
-                                            <tr class="border-t border-inherit border-solid hover:bg-gray-100 dark:hover:bg-light dark:border-defaultborder/10">
-                                                <th scope="row" class="!text-start">
-                                                    5
-                                                </th>
-                                                <td>
-                                                    <div class="flex items-center">
-                                                        <span class="avatar avatar-sm !mb-0 bg-warning/10 avatar-rounded">
-                                                            <i class="ri-mail-line text-[0.9375rem] font-semibiold text-warning"></i>
-                                                        </span>
-                                                        <span class="ms-2">
-                                                            Email
-                                                        </span>
-                                                    </div>
-                                                </td>
-                                                <td>378</td>
-                                                <td>23.79%</td>
-                                                <td>
-                                                    0 hrs : 14 mins : 27 secs
-                                                </td>
-                                                <td>
-                                                    <span class="badge bg-warning/10 text-warning">178</span>
-                                                </td>
-                                                <td>
-                                                    1.6
-                                                </td>
-                                            </tr>
-                                            <tr class="border-t border-inherit border-solid hover:bg-gray-100 dark:hover:bg-light dark:border-defaultborder/10">
-                                                <th scope="row" class="!text-start">
-                                                    6
-                                                </th>
-                                                <td>
-                                                    <div class="flex items-center">
-                                                        <span class="avatar avatar-sm !mb-0 bg-danger/10 avatar-rounded">
-                                                            <i class="ri-bank-card-line text-[0.9375rem] font-semibiold text-danger"></i>
-                                                        </span>
-                                                        <span class="ms-2">
-                                                            Paid Search
-                                                        </span>
-                                                    </div>
-                                                </td>
-                                                <td>488</td>
-                                                <td>28.77%</td>
-                                                <td>
-                                                    0 hrs : 16 mins : 28 secs
-                                                </td>
-                                                <td>
-                                                    <span class="badge bg-danger/10 text-danger">578</span>
-                                                </td>
-                                                <td>
-                                                    2.5
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="box-footer">
-                                <div class="sm:flex items-center">
-                                  <div class="dark:text-defaulttextcolor/70">
-                                    Showing 5 Entries <i class="bi bi-arrow-right ms-2 font-semibold"></i>
-                                  </div>
-                                  <div class="ms-auto">
-                                    <nav aria-label="Page navigation" class="pagination-style-4">
-                                        <ul class="ti-pagination mb-0">
-                                            <li class="page-item disabled">
-                                                <a class="page-link" href="javascript:void(0);">
-                                                    Prev
-                                                </a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link active" href="javascript:void(0);">1</a></li>
-                                            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link !text-primary" href="javascript:void(0);">
-                                                    next
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                  </div>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="xl:col-span-3 col-span-12">
-                        <div class="box">
-                            <div class="box-header justify-between">
-                                <div class="box-title">
-                                    Visitors By Countries
-                                </div>
-                                <div class="hs-dropdown ti-dropdown">
-                                    <a href="javascript:void(0);" class="px-2 font-normal text-[0.75rem] text-[#8c9097] dark:text-white/50"
-                                      aria-expanded="false">
-                                      View All<i class="ri-arrow-down-s-line align-middle ms-1 inline-block"></i>
-                                    </a>
-                                    <ul class="hs-dropdown-menu ti-dropdown-menu hidden" role="menu">
-                                      <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
-                                          href="javascript:void(0);">Today</a></li>
-                                      <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
-                                          href="javascript:void(0);">This Week</a></li>
-                                      <li><a class="ti-dropdown-item !py-2 !px-[0.9375rem] !text-[0.8125rem] !font-medium block"
-                                          href="javascript:void(0);">Last Week</a></li>
-                                    </ul>
-                                  </div>
-                              </div>
-                            <div class="box-body">
-                                <ul class="list-none mb-0 analytics-visitors-countries min-w-full">
-                                    <li>
-                                        <div class="flex items-center">
-                                            <div class="leading-none">
-                                                <span class="avatar avatar-sm !mb-0 text-default">
-                                                    <img src="../assets/images/flags/us_flag.jpg" alt="" class="!rounded-full h-[1.75rem] w-[1.75rem]">
-                                                </span>
-                                            </div>
-                                            <div class="ms-4 flex-grow leading-none">
-                                                <span class="text-[0.75rem]">United States</span>
-                                            </div>
-                                            <div>
-                                                <span class="text-default badge bg-light font-semibold mt-2">32,190</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="flex items-center">
-                                            <div class="leading-none">
-                                                <span class="avatar avatar-sm !mb-0 avatar-rounded text-default">
-                                                    <img src="../assets/images/flags/germany_flag.jpg" alt="" class="!rounded-full h-[1.75rem] w-[1.75rem]">
-                                                </span>
-                                            </div>
-                                            <div class="ms-4 flex-grow leading-none">
-                                                <span class="text-[0.75rem]">Germany</span>
-                                            </div>
-                                            <div>
-                                                <span class="text-default badge bg-light font-semibold mt-2">8,798</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="flex items-center">
-                                            <div class="leading-none">
-                                                <span class="avatar avatar-sm !mb-0 avatar-rounded text-default">
-                                                    <img src="../assets/images/flags/mexico_flag.jpg" alt="" class="!rounded-full h-[1.75rem] w-[1.75rem]">
-                                                </span>
-                                            </div>
-                                            <div class="ms-4 flex-grow leading-none">
-                                                <span class="text-[0.75rem]">Mexico</span>
-                                            </div>
-                                            <div>
-                                                <span class="text-default badge bg-light font-semibold mt-2">16,885</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="flex items-center">
-                                            <div class="leading-none">
-                                                <span class="avatar avatar-sm !mb-0 avatar-rounded text-default">
-                                                    <img src="../assets/images/flags/uae_flag.jpg" alt=""  class="!rounded-full h-[1.75rem] w-[1.75rem]">
-                                                </span>
-                                            </div>
-                                            <div class="ms-4 flex-grow leading-none">
-                                                <span class="text-[0.75rem]">Uae</span>
-                                            </div>
-                                            <div>
-                                                <span class="text-default badge bg-light font-semibold mt-2">14,885</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="flex items-center">
-                                            <div class="leading-none">
-                                                <span class="avatar avatar-sm !mb-0 avatar-rounded text-default">
-                                                    <img src="../assets/images/flags/argentina_flag.jpg" alt="" class="!rounded-full h-[1.75rem] w-[1.75rem]">
-                                                </span>
-                                            </div>
-                                            <div class="ms-4 flex-grow leading-none">
-                                                <span class="text-[0.75rem]">Argentina</span>
-                                            </div>
-                                            <div>
-                                                <span class="text-default badge bg-light font-semibold mt-2">17,578</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="flex items-center">
-                                            <div class="leading-none">
-                                                <span class="avatar avatar-sm !mb-0 avatar-rounded text-default">
-                                                    <img src="../assets/images/flags/russia_flag.jpg" alt=""  class="!rounded-full h-[1.75rem] w-[1.75rem]">
-                                                </span>
-                                            </div>
-                                            <div class="ms-4 flex-grow leading-none">
-                                                <span class="text-[0.75rem]">Russia</span>
-                                            </div>
-                                            <div>
-                                                <span class="text-default badge bg-light font-semibold mt-2">10,118</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="flex items-center">
-                                            <div class="leading-none">
-                                                <span class="avatar avatar-sm !mb-0 avatar-rounded text-default">
-                                                    <img src="../assets/images/flags/china_flag.jpg" alt="" class="!rounded-full h-[1.75rem] w-[1.75rem]">
-                                                </span>
-                                            </div>
-                                            <div class="ms-4 flex-grow leading-none">
-                                                <span class="text-[0.75rem]">China</span>
-                                            </div>
-                                            <div>
-                                                <span class="text-default badge bg-light font-semibold mt-2">6,578</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="flex items-center">
-                                            <div class="leading-none">
-                                                <span class="avatar avatar-sm !mb-0 avatar-rounded text-default">
-                                                    <img src="../assets/images/flags/french_flag.jpg" alt=""  class="!rounded-full h-[1.75rem] w-[1.75rem]">
-                                                </span>
-                                            </div>
-                                            <div class="ms-4 flex-grow leading-none">
-                                                <span class="text-[0.75rem]">France</span>
-                                            </div>
-                                            <div>
-                                                <span class="text-default badge bg-light font-semibold mt-2">2,345</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="flex items-center">
-                                            <div class="leading-none">
-                                                <span class="avatar avatar-sm !mb-0 avatar-rounded text-default">
-                                                    <img src="../assets/images/flags/canada_flag.jpg" alt="" class="!rounded-full h-[1.75rem] w-[1.75rem]">
-                                                </span>
-                                            </div>
-                                            <div class="ms-4 flex-grow leading-none">
-                                                <span class="text-[0.75rem]">Canada</span>
-                                            </div>
-                                            <div>
-                                                <span class="text-default badge bg-light font-semibold mt-2">1,678</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <!-- Page Header Close -->
 
+                <div class="grid grid-cols-12 gap-x-6">
+
+                <!--All projects section-->
+                <div class="xxl:col-span-12 xl:col-span-12 col-span-12">
+                    <div class="box custom-card">
+                      <div class="justify-between items-center w-full flex flex-col md:flex-row p-5 gap-5">
+                        <div class="box-title w-full">
+                          All Roles
+                        </div>
+                      </div>
+                      <div class="box-body">
+                        <div class="overflow-x-auto">
+                          <table class="table min-w-full whitespace-nowrap table-hover border table-bordered">
+                            <thead>
+                              <tr class="border border-inherit border-solid dark:border-defaultborder/10">
+                                <th scope="col" class="!text-start !text-[0.85rem]">Role Name</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">Description</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">Users Assigned</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">Permissions</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">Date Created</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">Actions</th>
+                              </tr>
+                            </thead>
+                            <tbody id="editData">
+                                <!--Recent 5 projects-->
+                                <!--Project row-->
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td>Moderator</td>
+                                  <td>Can manage user projects & reports	</td>
+                                  <td>
+                                    <ul class="flex flex-col items-start gap-2">
+                                      <li>John Doe</li>
+                                      <li>Peter Dave</li>
+                                      <li>Precious Paul</li>
+                                      <li>Moses Daniel</li>
+                                    </ul>
+                                  </td>
+                                  <td>
+                                    <ul class="flex flex-col items-start gap-2">
+                                      <li>Projects Management</li>
+                                      <li>Reports & Analytics</li>
+                                    </ul>
+                                  </td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <div class="ti-btn ti-btn-sm ti-btn-info !rounded-full cursor-pointer editNotification">
+                                            <!--Insert the notificationID here. It is very important to help open the right notification modal-->
+                                            <p class="hidden">AD1245364875</p>
+                                            <i class="ri-edit-line"></i>
+                                        </div>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteNotification">
+                                          <!--Insert the notificationID here also. It is very important to help open the notification modal-->
+                                          <p class="hidden">AD1245364876</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <!--End of row 1-->
+                                
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+                </div>
             </div>
         </div>
         <!-- End::content  -->
+
+        <!--Popups-->
+        <!--Create user role form popup-->
+        <section id="create-notification-popup-section" class="p-6 w-full gap-[10px] lg:gap-[20px] flex flex-col items-center justify-center h-screen top-0 z-50 bg-black/70 fixed">
+            <div class="p-5 bg-white rounded-[20px] flex-col justify-start items-center gap-5 inline-flex w-full lg:w-[40%] lg:h-full overflow-y-scroll">
+              <div class="flex items-center justify-center gap-[20px] w-full">
+                <h2 class="text-gray-900 text-xl lg:text-2xl font-bold leading-normal lg:leading-[44px] w-full text-center">Create role</h2>
+                <div id="close-create-new-notification" class="cursor-pointer text-xl lg:text-2xl"><i class="las la-times"></i></div>
+              </div>
+              <!--Create role form-->
+              <form action="" method="post" class="flex flex-col items-start justify-start gap-[20px] w-full lg:h-full overflow-y-scroll">
+                <div class="flex flex-col items-center justify-start gap-[10px] w-full">
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="roleName" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Role Name</label>
+                    <input type="text" required placeholder="Enter a concise role name" name="roleName" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="roleDescription" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Description</label>
+                    <input type="text" placeholder="Briefly describe the role’s responsibilities" name="roleDescription" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="userPermissions" class="text-gray-900 text-base lg:text-lg font-normal text-center leading-tight lg:leading-7">Assign Permissions (Check all that apply)</label>
+                    <div class="flex items-center justify-start gap-[10px] w-full">
+                        <input type="checkbox" name="Teaching/Mentorship" class="custom-checkbox">
+                        <p class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Teaching/Mentorship</p>
+                    </div>
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="notificationType" class="text-gray-900 text-base lg:text-lg font-normal text-center leading-tight lg:leading-7">Notification Type</label>
+                    <select name="notificationType" required id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                        <option value="Promotion" selected>Promotion</option>
+                        <option value="System Update">System Update</option>
+                      <option value="Reminder">Reminder</option>
+                      <option value="Others">Others</option>
+                    </select>
+                  </div>
+                </div>
+                  <button class="lg:flex px-5 py-2.5 bg-primary text-white text-[16px] lg:text-xl font-medium  rounded-[10px] justify-center items-center gap-2.5">Create notification</button>
+                </div>
+              </form>
+            </div>
+          </section>
+        <!--Edit notification form popup-->
+        <section id="Edit-notification-popup-section" class="p-6 w-full gap-[10px] lg:gap-[20px] hidden flex-col items-center justify-center h-screen top-0 z-50 bg-black/70 fixed">
+            <div class="p-5 bg-white rounded-[20px] flex-col justify-start items-center gap-5 inline-flex w-full lg:w-[40%] lg:h-full overflow-y-scroll">
+              <div class="flex items-center justify-center gap-[20px] w-full">
+                <h2 class="text-gray-900 text-xl lg:text-2xl font-bold leading-normal lg:leading-[44px] w-full text-center">Edit notification</h2>
+                <div id="close-edit-notification" class="cursor-pointer text-xl lg:text-2xl"><i class="las la-times"></i></div>
+              </div>
+              <!--Edit profile form-->
+              <form action="" method="post" class="flex flex-col items-start justify-start gap-[20px] w-full lg:h-full overflow-y-scroll">
+                <!--NotificationId details to change-->
+                <input type="text" class="hidden" name="notificationID" value="" id="selectedNotificationID">
+                <div class="flex flex-col items-center justify-start gap-[10px] w-full">
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="notificationTitle" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Title</label>
+                    <input type="text" value="Exclusive Offer!" required placeholder="Enter a concise title (e.g., Upcoming Maintenance Alert)" name="notificationTitle" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="roleDescription" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Description</label>
+                    <textarea name="roleDescription" id="" placeholder="Briefly describe the role’s responsibilities..." class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">Unlock 20% off on our premium plan! Offer valid until midnight</textarea>
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="AreaOfExpertise" class="text-gray-900 text-base lg:text-lg font-normal text-center leading-tight lg:leading-7">Area of Expertise (Check all that apply) </span><span class="text-[#ff3b30] text-lg font-normal leading-7">*</span></label>
+                    <div class="flex items-center justify-start gap-[10px] w-full">
+                        <input type="checkbox" name="Teaching/Mentorship" class="custom-checkbox">
+                        <p class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Teaching/Mentorship</p>
+                    </div>
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="notificationType" class="text-gray-900 text-base lg:text-lg font-normal text-center leading-tight lg:leading-7">Notification Type</label>
+                    <select name="notificationType" required id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                        <option value="Promotion" selected>Promotion</option>
+                        <option value="System Update">System Update</option>
+                      <option value="Reminder">Reminder</option>
+                      <option value="Others">Others</option>
+                    </select>
+                  </div>
+
+                </div>
+                  <button class="lg:flex px-5 py-2.5 bg-primary text-white text-[16px] lg:text-xl font-medium  rounded-[10px] justify-center items-center gap-2.5">Create role</button>
+                </div>
+              </form>
+            </div>
+          </section>
+          <!--Delete notification popup-->
+          <section id="delete-notification-popup-section" class="p-6 w-full gap-[10px] lg:gap-[20px] hidden flex-col items-center justify-center top-0 h-full z-50 bg-black/70 fixed">
+            <div class="p-5 bg-white rounded-[20px] flex-col justify-start items-center gap-5 inline-flex w-full lg:w-[40%]">
+              <div class="flex items-center justify-center gap-[20px] w-full">
+                <h2 class="text-gray-900 text-xl lg:text-2xl font-bold leading-normal lg:leading-[44px] w-full text-center">Delete notification</h2>
+                <div id="close-delete-user-form-popup" class="cursor-pointer text-xl lg:text-2xl"><i class="las la-times"></i></div>
+              </div>
+              <p class="text-gray-900 text-base lg:text-xl font-normal leading-loose lg:leading-normal w-full text-center">Are you sure you want to delete this notification? This action cannot be undone.</p>
+              <!--Delete notification form-->
+              <form action="" method="post" class="flex flex-col items-start justify-start gap-[20px] w-full">
+                <!--NotificationId details to change-->
+                <input type="text" class="hidden" name="notificationIDtoDelete" value="" id="notificationIDtoDelete">
+                  <div class="flex items-center justify-between w-full gap-5">
+                    <button class="flex px-5 py-2.5 bg-red-500 text-white text-[16px] lg:text-xl font-medium  rounded-[10px] justify-center items-center gap-2.5 w-full">Delete</button>
+                    <div class="flex items-center justify-center cursor-pointer px-5 py-2.5 text-[16px] lg:text-xl border border-gray-900 w-full rounded-[10px]" id="cancelDelete">Cancel</div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+                                                                                                                                                                          
 
         <!-- ========== Search Modal ========== -->
 <div id="search-modal" class="hs-overlay ti-modal hidden mt-[1.75rem]">
@@ -2527,23 +1963,9 @@
   </div>
 </div>
 <!-- ========== END Search Modal ========== -->
-        
-<!-- Footer Start -->
-<footer class="footer mt-auto xl:ps-[15rem]  font-normal font-inter bg-white text-defaultsize leading-normal text-[0.813] shadow-[0_0_0.4rem_rgba(0,0,0,0.1)] dark:bg-bodybg py-4 text-center">
-    <div class="container">
-        <span class="text-gray dark:text-defaulttextcolor/50"> Copyright © <span id="year"></span> <a
-                href="javascript:void(0);" class="text-defaulttextcolor font-semibold dark:text-defaulttextcolor">Ynex</a>.
-            Designed with <span class="bi bi-heart-fill text-danger"></span> by <a href="javascript:void(0);">
-                <span class="font-semibold text-primary underline">Spruko</span>
-            </a> All
-            rights
-            reserved
-        </span>
-    </div>
-</footer>
-<!-- Footer End -->
 
     </div>
+
     <!-- Back To Top -->
 <div class="scrollToTop">
     <span class="arrow"><i class="ri-arrow-up-s-fill text-xl"></i></span>
@@ -2575,21 +1997,13 @@
 
 
 
-    <!-- Apex Charts JS -->
-    <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
-
-    <!-- Used For Sessions By Device Chart -->
-    <script src="../assets/libs/moment/moment.js"></script>
-
-    <!-- Analytics-Dashboard JS -->
-    <script src="../assets/js/analytics-dashboard.js"></script>
-
     
 <!-- Custom-Switcher JS -->
 <script src="../assets/js/custom-switcher.js"></script>
 
     <!-- Custom JS -->
     <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/notification-manager.js"></script>
 
 </body>
 
