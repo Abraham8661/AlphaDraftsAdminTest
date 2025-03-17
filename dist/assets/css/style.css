@@ -68599,6 +68599,9 @@ caption {
   .lg\:hidden {
     display: none;
   }
+  .lg\:h-full {
+    height: 100%;
+  }
   .lg\:w-\[40\%\] {
     width: 40%;
   }

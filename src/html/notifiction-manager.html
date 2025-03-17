@@ -1,0 +1,498 @@
+ <!-- include main-header.html"-->
+
+</head>
+
+<body>
+
+    <!-- include switcher.html"-->
+    <!-- include loader.html"-->
+    <div class="page">
+
+        <!-- include header.html"-->
+        <!-- include menu.html"-->
+
+
+        <!-- Start::content  -->
+        <div class="content">
+            <!-- Start::main-content -->
+           <div class="main-content">
+            <!-- Page Header -->
+            <div class="block justify-between page-header md:flex">
+                <div>
+                    <h3 class="!text-defaulttextcolor dark:!text-defaulttextcolor/70 dark:text-white dark:hover:text-white text-[1.125rem] font-semibold">Notification Manager</h3>
+                    <p class="font-normal text-[#8c9097] dark:text-white/50 text-[0.813rem]">Keep users informed with important updates, reminders, and announcements.</p>
+                </div>
+                <div id="create-new-notication" class="flex items-center cursor-pointer bg-primary text-white p-2 rounded-md justify-center gap-1">
+                    <i class='bx bx-message-alt-add'></i>
+                    Create notification
+                </div>
+            </div>
+            <!-- Page Header Close -->
+
+                <div class="grid grid-cols-12 gap-x-6">
+
+                <!--All projects section-->
+                <div class="xxl:col-span-12 xl:col-span-12 col-span-12">
+                    <div class="box custom-card">
+                      <div class="justify-between items-center w-full flex flex-col md:flex-row p-5 gap-5">
+                        <div class="box-title w-full">
+                          All Created Notifications
+                        </div>
+                        <div class="flex flex-col md:flex-row items-center justify-between gap-5 w-full">
+                            <form action="" method="get">
+                              <div>
+                                <input class="ti-form-control form-control-md" type="text" name="searchQuery" placeholder="Search by notification title..."
+                                  aria-label=".form-control-sm example">
+                              </div>
+                            </form>
+                            <form action="" method="get" class="flex items-center justify-center gap-2">
+                              <div class="flex flex-col gap-[10px] items-start justify-start">
+                                <select name="filterProjects" id="" class="w-full p-1.5 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base font-normal leading-tight lg:leading-7">
+                                  <option value="AllProjects">All notifications</option>
+                                  <option value="Status">Status</option>
+                                  <option value="Category">Type</option>
+                                  <option value="AlphabeticalOrder">Alphabetical order</option>
+                                  <option value="lastWeek">Last week</option>
+                                  <option value="lastMonth">Last month</option>
+                                  <option value="lastYear">Last year</option>
+                                </select>
+                              </div>
+                              <button class="flex items-center cursor-pointer border border-primary p-2 rounded-md justify-center">Apply</button>
+                            </form>
+                            <a href="" class="flex items-center cursor-pointer border border-primary p-2 rounded-md justify-center">Export to CSV</a>
+                        </div>
+                      </div>
+                      <div class="box-body">
+                        <div class="overflow-x-auto">
+                          <table class="table min-w-full whitespace-nowrap table-hover border table-bordered">
+                            <thead>
+                              <tr class="border border-inherit border-solid dark:border-defaultborder/10">
+                                <th scope="col" class="!text-start !text-[0.85rem]">Title</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">Type</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">Delivery Method</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">Status</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">Date Created</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">Date Sent</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">Actions</th>
+                              </tr>
+                            </thead>
+                            <tbody id="editData">
+                                <!--Recent 5 projects-->
+                                <!--Project row-->
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td>Exclusive Offer!</td>
+                                  <td>Promotion</td>
+                                  <td>Email and In-App</td>
+                                  <td>Sent</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <div class="ti-btn ti-btn-sm ti-btn-info !rounded-full cursor-pointer editNotification">
+                                            <!--Insert the notificationID here. It is very important to help open the right notification modal-->
+                                            <p class="hidden">AD1245364875</p>
+                                            <i class="ri-edit-line"></i>
+                                        </div>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteNotification">
+                                          <!--Insert the notificationID here also. It is very important to help open the notification modal-->
+                                          <p class="hidden">AD1245364876</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <!--End of row 1-->
+                                <!--Start of other rows-->
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td>Exclusive Offer!</td>
+                                  <td>Promotion</td>
+                                  <td>Email and In-App</td>
+                                  <td>Sent</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <div class="ti-btn ti-btn-sm ti-btn-info !rounded-full cursor-pointer editNotification">
+                                            <!--Insert the notificationID here. It is very important to help open the right notification modal-->
+                                            <p class="hidden">AD1245364875</p>
+                                            <i class="ri-edit-line"></i>
+                                        </div>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteNotification">
+                                          <!--Insert the notificationID here also. It is very important to help open the notification modal-->
+                                          <p class="hidden">AD1245364876</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td>Exclusive Offer!</td>
+                                  <td>Promotion</td>
+                                  <td>Email and In-App</td>
+                                  <td>Sent</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <div class="ti-btn ti-btn-sm ti-btn-info !rounded-full cursor-pointer editNotification">
+                                            <!--Insert the notificationID here. It is very important to help open the right notification modal-->
+                                            <p class="hidden">AD1245364875</p>
+                                            <i class="ri-edit-line"></i>
+                                        </div>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteNotification">
+                                          <!--Insert the notificationID here also. It is very important to help open the notification modal-->
+                                          <p class="hidden">AD1245364876</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td>Exclusive Offer!</td>
+                                  <td>Promotion</td>
+                                  <td>Email and In-App</td>
+                                  <td>Sent</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <div class="ti-btn ti-btn-sm ti-btn-info !rounded-full cursor-pointer editNotification">
+                                            <!--Insert the notificationID here. It is very important to help open the right notification modal-->
+                                            <p class="hidden">AD1245364875</p>
+                                            <i class="ri-edit-line"></i>
+                                        </div>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteNotification">
+                                          <!--Insert the notificationID here also. It is very important to help open the notification modal-->
+                                          <p class="hidden">AD1245364876</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td>Exclusive Offer!</td>
+                                  <td>Promotion</td>
+                                  <td>Email and In-App</td>
+                                  <td>Sent</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <div class="ti-btn ti-btn-sm ti-btn-info !rounded-full cursor-pointer editNotification">
+                                            <!--Insert the notificationID here. It is very important to help open the right notification modal-->
+                                            <p class="hidden">AD1245364875</p>
+                                            <i class="ri-edit-line"></i>
+                                        </div>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteNotification">
+                                          <!--Insert the notificationID here also. It is very important to help open the notification modal-->
+                                          <p class="hidden">AD1245364876</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td>Exclusive Offer!</td>
+                                  <td>Promotion</td>
+                                  <td>Email and In-App</td>
+                                  <td>Sent</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <div class="ti-btn ti-btn-sm ti-btn-info !rounded-full cursor-pointer editNotification">
+                                            <!--Insert the notificationID here. It is very important to help open the right notification modal-->
+                                            <p class="hidden">AD1245364875</p>
+                                            <i class="ri-edit-line"></i>
+                                        </div>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteNotification">
+                                          <!--Insert the notificationID here also. It is very important to help open the notification modal-->
+                                          <p class="hidden">AD1245364876</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td>Exclusive Offer!</td>
+                                  <td>Promotion</td>
+                                  <td>Email and In-App</td>
+                                  <td>Sent</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <div class="ti-btn ti-btn-sm ti-btn-info !rounded-full cursor-pointer editNotification">
+                                            <!--Insert the notificationID here. It is very important to help open the right notification modal-->
+                                            <p class="hidden">AD1245364875</p>
+                                            <i class="ri-edit-line"></i>
+                                        </div>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteNotification">
+                                          <!--Insert the notificationID here also. It is very important to help open the notification modal-->
+                                          <p class="hidden">AD1245364876</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td>Exclusive Offer!</td>
+                                  <td>Promotion</td>
+                                  <td>Email and In-App</td>
+                                  <td>Sent</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <div class="ti-btn ti-btn-sm ti-btn-info !rounded-full cursor-pointer editNotification">
+                                            <!--Insert the notificationID here. It is very important to help open the right notification modal-->
+                                            <p class="hidden">AD1245364875</p>
+                                            <i class="ri-edit-line"></i>
+                                        </div>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteNotification">
+                                          <!--Insert the notificationID here also. It is very important to help open the notification modal-->
+                                          <p class="hidden">AD1245364876</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td>Exclusive Offer!</td>
+                                  <td>Promotion</td>
+                                  <td>Email and In-App</td>
+                                  <td>Sent</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <div class="ti-btn ti-btn-sm ti-btn-info !rounded-full cursor-pointer editNotification">
+                                            <!--Insert the notificationID here. It is very important to help open the right notification modal-->
+                                            <p class="hidden">AD1245364875</p>
+                                            <i class="ri-edit-line"></i>
+                                        </div>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteNotification">
+                                          <!--Insert the notificationID here also. It is very important to help open the notification modal-->
+                                          <p class="hidden">AD1245364876</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td>Exclusive Offer!</td>
+                                  <td>Promotion</td>
+                                  <td>Email and In-App</td>
+                                  <td>Sent</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <div class="ti-btn ti-btn-sm ti-btn-info !rounded-full cursor-pointer editNotification">
+                                            <!--Insert the notificationID here. It is very important to help open the right notification modal-->
+                                            <p class="hidden">AD1245364875</p>
+                                            <i class="ri-edit-line"></i>
+                                        </div>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteNotification">
+                                          <!--Insert the notificationID here also. It is very important to help open the notification modal-->
+                                          <p class="hidden">AD1245364876</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <!--End of others row-->
+                                
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                    <div class="xl:col-span-4 col-span-12">
+                      <div class="box-footer">
+                          <div class="sm:flex items-center">
+                            <div class="text-defaulttextcolor dark:text-defaulttextcolor/70">
+                              Showing 10 Entries 
+                            </div>
+                            <div class="ms-auto">
+                              <nav aria-label="Page navigation" class="pagination-style-4">
+                                <ul class="ti-pagination mb-0">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="javascript:void(0);">
+                                            Prev
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link active" href="javascript:void(0);">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link !text-primary" href="javascript:void(0);">
+                                            next
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                </div>
+            </div>
+        </div>
+        <!-- End::content  -->
+
+        <!--Popups-->
+        <!--Create notification form popup-->
+        <section id="create-notification-popup-section" class="p-6 w-full gap-[10px] lg:gap-[20px] hidden flex-col items-center justify-center h-screen top-0 z-50 bg-black/70 fixed">
+            <div class="p-5 bg-white rounded-[20px] flex-col justify-start items-center gap-5 inline-flex w-full lg:w-[40%] lg:h-full overflow-y-scroll">
+              <div class="flex items-center justify-center gap-[20px] w-full">
+                <h2 class="text-gray-900 text-xl lg:text-2xl font-bold leading-normal lg:leading-[44px] w-full text-center">Create notification</h2>
+                <div id="close-create-new-notification" class="cursor-pointer text-xl lg:text-2xl"><i class="las la-times"></i></div>
+              </div>
+              <!--Edit profile form-->
+              <form action="" method="post" class="flex flex-col items-start justify-start gap-[20px] w-full lg:h-full overflow-y-scroll">
+                <div class="flex flex-col items-center justify-start gap-[10px] w-full">
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="notificationTitle" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Title</label>
+                    <input type="text" required placeholder="Enter a concise title (e.g., Upcoming Maintenance Alert)" name="notificationTitle" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="notificationMessage" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Message</label>
+                    <textarea name="notificationMessage" id="" required placeholder="Write your message here..." class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7"></textarea>
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="notificationType" class="text-gray-900 text-base lg:text-lg font-normal text-center leading-tight lg:leading-7">Notification Type</label>
+                    <select name="notificationType" required id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                      <option value="" disabled selected>Select..</option>
+                      <option value="System Update">System Update</option>
+                      <option value="Reminder">Reminder</option>
+                      <option value="Promotion">Promotion</option>
+                      <option value="Others">Others</option>
+                    </select>
+                  </div>
+                </div>
+                <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="deliveryMethod" class="text-gray-900 text-base lg:text-lg font-normal text-center leading-tight lg:leading-7">Delivery Method</label>
+                    <select name="deliveryMethod" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                      <option value="" disabled selected>Select..</option>
+                      <option value="Email">Email</option>
+                      <option value="In-App">In-App</option>
+                      <option value="Email & In-App">Email & In-App</option>
+                    </select>
+                  </div>
+                <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="schedule" class="text-gray-900 text-base lg:text-lg font-normal text-center leading-tight lg:leading-7">Schedule</label>
+                    <select name="schedule" id="scheduleNotification" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                      <option value="" disabled selected>Select..</option>
+                      <option value="Send Now">Send Now</option>
+                      <option value="Schedule for Later">Schedule for Later</option>
+                    </select>
+                    <input type="datetime-local" name="scheduledDate&Time" id="showDate&TimePicker" class="p-2.5 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-between items-start gap-2.5 hidden text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                  <button class="lg:flex px-5 py-2.5 bg-primary text-white text-[16px] lg:text-xl font-medium  rounded-[10px] justify-center items-center gap-2.5">Create notification</button>
+                </div>
+              </form>
+            </div>
+          </section>
+        <!--Edit notification form popup-->
+        <section id="Edit-notification-popup-section" class="p-6 w-full gap-[10px] lg:gap-[20px] hidden flex-col items-center justify-center h-screen top-0 z-50 bg-black/70 fixed">
+            <div class="p-5 bg-white rounded-[20px] flex-col justify-start items-center gap-5 inline-flex w-full lg:w-[40%] lg:h-full overflow-y-scroll">
+              <div class="flex items-center justify-center gap-[20px] w-full">
+                <h2 class="text-gray-900 text-xl lg:text-2xl font-bold leading-normal lg:leading-[44px] w-full text-center">Edit notification</h2>
+                <div id="close-edit-notification" class="cursor-pointer text-xl lg:text-2xl"><i class="las la-times"></i></div>
+              </div>
+              <!--Edit profile form-->
+              <form action="" method="post" class="flex flex-col items-start justify-start gap-[20px] w-full lg:h-full overflow-y-scroll">
+                <!--NotificationId details to change-->
+                <input type="text" class="hidden" name="notificationID" value="" id="selectedNotificationID">
+                <div class="flex flex-col items-center justify-start gap-[10px] w-full">
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="notificationTitle" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Title</label>
+                    <input type="text" value="Exclusive Offer!" required placeholder="Enter a concise title (e.g., Upcoming Maintenance Alert)" name="notificationTitle" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="notificationMessage" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Message</label>
+                    <textarea name="notificationMessage" id="" required placeholder="Write your message here..." class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">Unlock 20% off on our premium plan! Offer valid until midnight</textarea>
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="notificationType" class="text-gray-900 text-base lg:text-lg font-normal text-center leading-tight lg:leading-7">Notification Type</label>
+                    <select name="notificationType" required id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                        <option value="Promotion" selected>Promotion</option>
+                        <option value="System Update">System Update</option>
+                      <option value="Reminder">Reminder</option>
+                      <option value="Others">Others</option>
+                    </select>
+                  </div>
+                </div>
+                <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="deliveryMethod" class="text-gray-900 text-base lg:text-lg font-normal text-center leading-tight lg:leading-7">Delivery Method</label>
+                    <select name="deliveryMethod" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                        <option value="Email & In-App" selected>Email & In-App</option>
+                        <option value="Email">Email</option>
+                      <option value="In-App">In-App</option>
+                    </select>
+                  </div>
+                <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="schedule" class="text-gray-900 text-base lg:text-lg font-normal text-center leading-tight lg:leading-7">Schedule</label>
+                    <select name="schedule" id="scheduleNotification" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                      <option value="" disabled selected>Select..</option>
+                      <option value="Send Now" selected>Send Now</option>
+                      <option value="Schedule for Later">Schedule for Later</option>
+                    </select>
+                    <input type="datetime-local" name="scheduledDate&Time" value="" id="showDate&TimePicker" class="p-2.5 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-between items-start gap-2.5 hidden text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                  <button class="lg:flex px-5 py-2.5 bg-primary text-white text-[16px] lg:text-xl font-medium  rounded-[10px] justify-center items-center gap-2.5">Save changes</button>
+                </div>
+              </form>
+            </div>
+          </section>
+          <!--Delete notification popup-->
+          <section id="delete-notification-popup-section" class="p-6 w-full gap-[10px] lg:gap-[20px] hidden flex-col items-center justify-center top-0 h-full z-50 bg-black/70 fixed">
+            <div class="p-5 bg-white rounded-[20px] flex-col justify-start items-center gap-5 inline-flex w-full lg:w-[40%]">
+              <div class="flex items-center justify-center gap-[20px] w-full">
+                <h2 class="text-gray-900 text-xl lg:text-2xl font-bold leading-normal lg:leading-[44px] w-full text-center">Delete notification</h2>
+                <div id="close-delete-user-form-popup" class="cursor-pointer text-xl lg:text-2xl"><i class="las la-times"></i></div>
+              </div>
+              <p class="text-gray-900 text-base lg:text-xl font-normal leading-loose lg:leading-normal w-full text-center">Are you sure you want to delete this notification? This action cannot be undone.</p>
+              <!--Delete notification form-->
+              <form action="" method="post" class="flex flex-col items-start justify-start gap-[20px] w-full">
+                <!--NotificationId details to change-->
+                <input type="text" class="hidden" name="notificationIDtoDelete" value="" id="notificationIDtoDelete">
+                  <div class="flex items-center justify-between w-full gap-5">
+                    <button class="flex px-5 py-2.5 bg-red-500 text-white text-[16px] lg:text-xl font-medium  rounded-[10px] justify-center items-center gap-2.5 w-full">Delete</button>
+                    <div class="flex items-center justify-center cursor-pointer px-5 py-2.5 text-[16px] lg:text-xl border border-gray-900 w-full rounded-[10px]" id="cancelDelete">Cancel</div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+                                                                                                                                                                          
+
+        <!-- include headersearch_modal.html"-->
+
+    </div>
+
+    <!-- include commonjs.html"-->
+
+    <!-- include custom_switcherjs.html"-->
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/notification-manager.js"></script>
+
+</body>
+
+</html>
