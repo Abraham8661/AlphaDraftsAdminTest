@@ -1678,7 +1678,7 @@
 
                 <div class="grid grid-cols-12 gap-x-6">
 
-                <!--All projects section-->
+                <!--All Roles section-->
                 <div class="xxl:col-span-12 xl:col-span-12 col-span-12">
                     <div class="box custom-card">
                       <div class="justify-between items-center w-full flex flex-col md:flex-row p-5 gap-5">
@@ -1701,7 +1701,7 @@
                             </thead>
                             <tbody id="editData">
                                 <!--Recent 5 projects-->
-                                <!--Project row-->
+                                <!--Role row-->
                                 <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
                                   <td>Moderator</td>
                                   <td>Can manage user projects & reports	</td>
@@ -1709,26 +1709,24 @@
                                     <ul class="flex flex-col items-start gap-2">
                                       <li>John Doe</li>
                                       <li>Peter Dave</li>
-                                      <li>Precious Paul</li>
-                                      <li>Moses Daniel</li>
                                     </ul>
                                   </td>
                                   <td>
                                     <ul class="flex flex-col items-start gap-2">
-                                      <li>Projects Management</li>
-                                      <li>Reports & Analytics</li>
+                                      <li>Projects Monitoring</li>
+                                      <li>Notification Manager</li>
                                     </ul>
                                   </td>
                                   <td>Feb 12, 2025 at 8:30PM</td>
                                   <td>
                                     <div class="hstack flex items-center gap-3 text-[.9375rem]">
                                         <div class="ti-btn ti-btn-sm ti-btn-info !rounded-full cursor-pointer editNotification">
-                                            <!--Insert the notificationID here. It is very important to help open the right notification modal-->
+                                            <!--Insert the roleID here. It is very important to help open the right role modal-->
                                             <p class="hidden">AD1245364875</p>
                                             <i class="ri-edit-line"></i>
                                         </div>
                                         <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteNotification">
-                                          <!--Insert the notificationID here also. It is very important to help open the notification modal-->
+                                          <!--Insert the roleID here also. It is very important to help open the notification modal-->
                                           <p class="hidden">AD1245364876</p>
                                           <i class="ri-delete-bin-line"></i>
                                         </div>
@@ -1736,23 +1734,53 @@
                                   </td>
                                 </tr>
                                 <!--End of row 1-->
-                                
+                                <!--Start of other rows-->
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td>Billing Manager</td>
+                                  <td>Handles subscriptions & payments	</td>
+                                  <td>
+                                    <ul class="flex flex-col items-start gap-2">
+                                      <li>Precious Paul</li>
+                                      <li>Daniel Saviour</li>
+                                    </ul>
+                                  </td>
+                                  <td>
+                                    <ul class="flex flex-col items-start gap-2">
+                                      <li>Subscripton Settings</li>
+                                    </ul>
+                                  </td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <div class="ti-btn ti-btn-sm ti-btn-info !rounded-full cursor-pointer editNotification">
+                                            <!--Insert the roleID here. It is very important to help open the right role modal-->
+                                            <p class="hidden">AD1245364875</p>
+                                            <i class="ri-edit-line"></i>
+                                        </div>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteNotification">
+                                          <!--Insert the roleID here also. It is very important to help open the notification modal-->
+                                          <p class="hidden">AD1245364876</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <!--End of others role -->
                             </tbody>
                           </table>
                         </div>
-                      </div>
-
                   </div>
                 </div>
               </div>
                 </div>
             </div>
+            
         </div>
         <!-- End::content  -->
 
         <!--Popups-->
         <!--Create user role form popup-->
-        <section id="create-notification-popup-section" class="p-6 w-full gap-[10px] lg:gap-[20px] flex flex-col items-center justify-center h-screen top-0 z-50 bg-black/70 fixed">
+        <section id="create-notification-popup-section" class="p-6 w-full gap-[10px] lg:gap-[20px] hidden flex-col items-center justify-center h-screen top-0 z-50 bg-black/70 fixed">
             <div class="p-5 bg-white rounded-[20px] flex-col justify-start items-center gap-5 inline-flex w-full lg:w-[40%] lg:h-full overflow-y-scroll">
               <div class="flex items-center justify-center gap-[20px] w-full">
                 <h2 class="text-gray-900 text-xl lg:text-2xl font-bold leading-normal lg:leading-[44px] w-full text-center">Create role</h2>
@@ -1771,89 +1799,168 @@
                     <label for="roleDescription" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Description</label>
                     <input type="text" placeholder="Briefly describe the role’s responsibilities" name="roleDescription" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
                   </div>
-                  <!--Form item-->
-                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
-                    <label for="userPermissions" class="text-gray-900 text-base lg:text-lg font-normal text-center leading-tight lg:leading-7">Assign Permissions (Check all that apply)</label>
-                    <div class="flex items-center justify-start gap-[10px] w-full">
-                        <input type="checkbox" name="Teaching/Mentorship" class="custom-checkbox">
-                        <p class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Teaching/Mentorship</p>
-                    </div>
+                 <!--Form item-->
+                 <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                  <label for="permissions" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Assign Permissions (Check all that apply)</label>
+                  <div class="flex items-center justify-start gap-[10px] w-full">
+                      <input type="checkbox" name="userManagement" class="custom-checkbox" value="AD1245364875">
+                      <p class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">User Management</p>
                   </div>
-                  <!--Form item-->
-                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
-                    <label for="notificationType" class="text-gray-900 text-base lg:text-lg font-normal text-center leading-tight lg:leading-7">Notification Type</label>
-                    <select name="notificationType" required id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
-                        <option value="Promotion" selected>Promotion</option>
-                        <option value="System Update">System Update</option>
-                      <option value="Reminder">Reminder</option>
-                      <option value="Others">Others</option>
-                    </select>
+                  <div class="flex items-center justify-start gap-[10px] w-full">
+                      <input type="checkbox" name="projectMonitoring" class="custom-checkbox" value="AD1245364876">
+                      <p class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Project Monitoring</p>
                   </div>
-                </div>
-                  <button class="lg:flex px-5 py-2.5 bg-primary text-white text-[16px] lg:text-xl font-medium  rounded-[10px] justify-center items-center gap-2.5">Create notification</button>
-                </div>
+                  <div class="flex items-center justify-start gap-[10px] w-full">
+                      <input type="checkbox" name="subscription&Billing" class="custom-checkbox" value="AD1245364877">
+                      <p class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Subscription & Billing</p>
+                  </div>
+                  <div class="flex items-center justify-start gap-[10px] w-full">
+                      <input type="checkbox" name="notificationManager" class="custom-checkbox">
+                      <p class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Notification Manager</p>
+                  </div>
+                  <div class="flex items-center justify-start gap-[10px] w-full">
+                      <input type="checkbox" name="rolesManagement" class="custom-checkbox" value="AD1245364878">
+                      <p class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Roles Management</p>
+                  </div>
+                  <div class="flex items-center justify-start gap-[10px] w-full">
+                      <input type="checkbox" name="subscriptionSettings" class="custom-checkbox" value="AD1245364879">
+                      <p class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Subscription Settings</p>
+                  </div>
+                  <div class="flex items-center justify-start gap-[10px] w-full">
+                      <input type="checkbox" name="apiKeyManagement" class="custom-checkbox" value="AD1245364880">
+                      <p class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">API Key Management</p>
+                  </div>
+                  <!--To select users to give new role-->
+                  <div class="w-full flex flex-col gap-[10px] mb-4">
+                    <!--All select users will be stored in the input below-->
+                    <input type="hidden" name="multi-select" id="multi-select" value="">
+                    <label for="usersToAdd" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Select Users</label>
+                      <div class="relative">
+                          <div id="select-box" class="border p-2.5 rounded cursor-pointer border-gray-400 focus:border-gray-800" onclick="toggleDropdown()">
+                              <div id="selected-items" class="flex flex-wrap gap-1"></div>
+                              <span id="placeholder" class="text-gray-900">Select options...</span>
+                          </div>
+                          <div id="dropdown" class="absolute w-full mt-1 bg-white border rounded shadow-lg hidden">
+                              <input type="text" id="search" class="w-full p-2 border-b" placeholder="Search..." onkeyup="filterOptions()">
+                              <ul class="max-h-40 overflow-auto" id="option-list">
+                                  <!--Replace the id with the user id and li field with the user full name-->
+                                  <li id="AD1245364875" class="p-2 hover:bg-gray-200 cursor-pointer" onclick="selectItem(this)">John Paul</li>
+                                  <li id="AD1245364876" class="p-2 hover:bg-gray-200 cursor-pointer" onclick="selectItem(this)">Ruth Dave</li>
+                                  <li id="AD1245364877" class="p-2 hover:bg-gray-200 cursor-pointer" onclick="selectItem(this)">Sam Paul</li>
+                                  <li id="AD1245364878" class="p-2 hover:bg-gray-200 cursor-pointer" onclick="selectItem(this)">Victor David</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                <button class="lg:flex px-5 py-2.5 bg-primary text-white text-[16px] lg:text-xl font-medium  rounded-[10px] justify-center items-center gap-2.5">Create role</button>
               </form>
             </div>
           </section>
-        <!--Edit notification form popup-->
+
+
+        <!--Edit user role form popup-->
         <section id="Edit-notification-popup-section" class="p-6 w-full gap-[10px] lg:gap-[20px] hidden flex-col items-center justify-center h-screen top-0 z-50 bg-black/70 fixed">
             <div class="p-5 bg-white rounded-[20px] flex-col justify-start items-center gap-5 inline-flex w-full lg:w-[40%] lg:h-full overflow-y-scroll">
               <div class="flex items-center justify-center gap-[20px] w-full">
-                <h2 class="text-gray-900 text-xl lg:text-2xl font-bold leading-normal lg:leading-[44px] w-full text-center">Edit notification</h2>
-                <div id="close-edit-notification" class="cursor-pointer text-xl lg:text-2xl"><i class="las la-times"></i></div>
+                <h2 class="text-gray-900 text-xl lg:text-2xl font-bold leading-normal lg:leading-[44px] w-full text-center">Edit role</h2>
+                <div id="close-edit-role" class="cursor-pointer text-xl lg:text-2xl"><i class="las la-times"></i></div>
               </div>
-              <!--Edit profile form-->
+              <!--Edit role form-->
               <form action="" method="post" class="flex flex-col items-start justify-start gap-[20px] w-full lg:h-full overflow-y-scroll">
-                <!--NotificationId details to change-->
-                <input type="text" class="hidden" name="notificationID" value="" id="selectedNotificationID">
+                <!--roleId to edit-->
+                <input type="text" class="hidden" name="roleIDtoEdit" value="" id="roleIDtoEdit">
                 <div class="flex flex-col items-center justify-start gap-[10px] w-full">
                   <!--Form item-->
                   <div class="flex flex-col gap-[10px] items-start justify-start w-full">
-                    <label for="notificationTitle" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Title</label>
-                    <input type="text" value="Exclusive Offer!" required placeholder="Enter a concise title (e.g., Upcoming Maintenance Alert)" name="notificationTitle" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                    <label for="roleName" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Role Name</label>
+                    <input type="text" required placeholder="Enter a concise role name" name="roleName" id="" value="Moderator" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
                   </div>
                   <!--Form item-->
                   <div class="flex flex-col gap-[10px] items-start justify-start w-full">
                     <label for="roleDescription" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Description</label>
-                    <textarea name="roleDescription" id="" placeholder="Briefly describe the role’s responsibilities..." class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">Unlock 20% off on our premium plan! Offer valid until midnight</textarea>
+                    <input type="text" placeholder="Briefly describe the role’s responsibilities" name="roleDescription" value="Can manage user projects & reports" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
                   </div>
-                  <!--Form item-->
-                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
-                    <label for="AreaOfExpertise" class="text-gray-900 text-base lg:text-lg font-normal text-center leading-tight lg:leading-7">Area of Expertise (Check all that apply) </span><span class="text-[#ff3b30] text-lg font-normal leading-7">*</span></label>
-                    <div class="flex items-center justify-start gap-[10px] w-full">
-                        <input type="checkbox" name="Teaching/Mentorship" class="custom-checkbox">
-                        <p class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Teaching/Mentorship</p>
-                    </div>
+                 <!--Form item-->
+                 <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                  <label for="permissions" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Assign Permissions (Check all that apply)</label>
+                  <div class="flex items-center justify-start gap-[10px] w-full">
+                      <input type="checkbox" name="userManagement" class="custom-checkbox">
+                      <p class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">User Management</p>
                   </div>
-                  <!--Form item-->
-                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
-                    <label for="notificationType" class="text-gray-900 text-base lg:text-lg font-normal text-center leading-tight lg:leading-7">Notification Type</label>
-                    <select name="notificationType" required id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
-                        <option value="Promotion" selected>Promotion</option>
-                        <option value="System Update">System Update</option>
-                      <option value="Reminder">Reminder</option>
-                      <option value="Others">Others</option>
-                    </select>
+                  <div class="flex items-center justify-start gap-[10px] w-full">
+                      <input type="checkbox" name="projectMonitoring" class="custom-checkbox" checked>
+                      <p class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Project Monitoring</p>
                   </div>
-
-                </div>
-                  <button class="lg:flex px-5 py-2.5 bg-primary text-white text-[16px] lg:text-xl font-medium  rounded-[10px] justify-center items-center gap-2.5">Create role</button>
-                </div>
+                  <div class="flex items-center justify-start gap-[10px] w-full">
+                      <input type="checkbox" name="subscription&Billing" class="custom-checkbox">
+                      <p class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Subscription & Billing</p>
+                  </div>
+                  <div class="flex items-center justify-start gap-[10px] w-full">
+                      <input type="checkbox" name="notificationManager" class="custom-checkbox" checked>
+                      <p class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Notification Manager</p>
+                  </div>
+                  <div class="flex items-center justify-start gap-[10px] w-full">
+                      <input type="checkbox" name="rolesManagement" class="custom-checkbox">
+                      <p class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Roles Management</p>
+                  </div>
+                  <div class="flex items-center justify-start gap-[10px] w-full">
+                      <input type="checkbox" name="subscriptionSettings" class="custom-checkbox">
+                      <p class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Subscription Settings</p>
+                  </div>
+                  <div class="flex items-center justify-start gap-[10px] w-full">
+                      <input type="checkbox" name="apiKeyManagement" class="custom-checkbox">
+                      <p class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">API Key Management</p>
+                  </div>
+                  <!--Existing users with roles -->
+                 <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                  <label for="userWith Roles" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Users having role</label>
+                  <div class="flex items-center justify-start gap-[10px] w-full">
+                      <input type="checkbox" name="usersWithRoles" class="custom-checkbox" value="AD1245364875" checked>
+                      <p class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">John Doe</p>
+                  </div>
+                  <div class="flex items-center justify-start gap-[10px] w-full">
+                      <input type="checkbox" name="usersWithRoles" class="custom-checkbox" value="AD1245364876" checked>
+                      <p class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Peter Doe</p>
+                  </div>
+                  <!--To select users to give new role-->
+                  <div class="w-full flex flex-col gap-[10px] mb-4">
+                    <!--All select users will be stored in the input below-->
+                    <input type="hidden" name="multi-select" id="multi-select2" value="">
+                    <label for="usersToAdd" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Select new Users</label>
+                      <div class="relative">
+                          <div id="select-box2" class="border p-2.5 rounded cursor-pointer border-gray-400 focus:border-gray-800" onclick="toggleDropdown()">
+                              <div id="selected-items2" class="flex flex-wrap gap-1"></div>
+                              <span id="placeholder2" class="text-gray-900">Select options...</span>
+                          </div>
+                          <div id="dropdown2" class="absolute w-full mt-1 bg-white border rounded shadow-lg hidden">
+                              <input type="text" id="search" class="w-full p-2 border-b" placeholder="Search..." onkeyup="filterOptions()">
+                              <ul class="max-h-40 overflow-auto" id="option-list">
+                                  <!--Replace the id with the user id and li field with the user full name-->
+                                  <li id="AD1245364875" class="p-2 hover:bg-gray-200 cursor-pointer" onclick="selectItem(this)">John Paul</li>
+                                  <li id="AD1245364876" class="p-2 hover:bg-gray-200 cursor-pointer" onclick="selectItem(this)">Ruth Dave</li>
+                                  <li id="AD1245364877" class="p-2 hover:bg-gray-200 cursor-pointer" onclick="selectItem(this)">Sam Paul</li>
+                                  <li id="AD1245364878" class="p-2 hover:bg-gray-200 cursor-pointer" onclick="selectItem(this)">Victor David</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                <button class="lg:flex px-5 py-2.5 bg-primary text-white text-[16px] lg:text-xl font-medium  rounded-[10px] justify-center items-center gap-2.5">Create role</button>
               </form>
             </div>
           </section>
-          <!--Delete notification popup-->
+        
+          <!--Delete role popup-->
           <section id="delete-notification-popup-section" class="p-6 w-full gap-[10px] lg:gap-[20px] hidden flex-col items-center justify-center top-0 h-full z-50 bg-black/70 fixed">
             <div class="p-5 bg-white rounded-[20px] flex-col justify-start items-center gap-5 inline-flex w-full lg:w-[40%]">
               <div class="flex items-center justify-center gap-[20px] w-full">
-                <h2 class="text-gray-900 text-xl lg:text-2xl font-bold leading-normal lg:leading-[44px] w-full text-center">Delete notification</h2>
+                <h2 class="text-gray-900 text-xl lg:text-2xl font-bold leading-normal lg:leading-[44px] w-full text-center">Delete role</h2>
                 <div id="close-delete-user-form-popup" class="cursor-pointer text-xl lg:text-2xl"><i class="las la-times"></i></div>
               </div>
-              <p class="text-gray-900 text-base lg:text-xl font-normal leading-loose lg:leading-normal w-full text-center">Are you sure you want to delete this notification? This action cannot be undone.</p>
-              <!--Delete notification form-->
+              <p class="text-gray-900 text-base lg:text-xl font-normal leading-loose lg:leading-normal w-full text-center">Are you sure you want to delete this role? This action cannot be undone.</p>
+              <!--Delete role form-->
               <form action="" method="post" class="flex flex-col items-start justify-start gap-[20px] w-full">
-                <!--NotificationId details to change-->
-                <input type="text" class="hidden" name="notificationIDtoDelete" value="" id="notificationIDtoDelete">
+                <!--roleId to delete-->
+                <input type="text" class="hidden" name="roleIDtoDelete" value="" id="notificationIDtoDelete">
                   <div class="flex items-center justify-between w-full gap-5">
                     <button class="flex px-5 py-2.5 bg-red-500 text-white text-[16px] lg:text-xl font-medium  rounded-[10px] justify-center items-center gap-2.5 w-full">Delete</button>
                     <div class="flex items-center justify-center cursor-pointer px-5 py-2.5 text-[16px] lg:text-xl border border-gray-900 w-full rounded-[10px]" id="cancelDelete">Cancel</div>
@@ -2001,9 +2108,166 @@
 <!-- Custom-Switcher JS -->
 <script src="../assets/js/custom-switcher.js"></script>
 
+
+     <!-- Choices JS -->
+    <script src="../assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    
+    <!-- Tom Select JS -->
+    <script src="../assets/libs/tom-select/js/tom-select.complete.min.js"></script>
+
+
     <!-- Custom JS -->
     <script src="../assets/js/custom.js"></script>
-    <script src="../assets/js/notification-manager.js"></script>
+    <script src="../assets/js/role-management.js"></script>
+
+    <!--Create role form-->
+    <!--The select users field script-->
+    <script>
+      let selectedValues = [];
+      let selectedNames = [];
+
+      function toggleDropdown() {
+          const dropdown = document.getElementById('dropdown');
+          dropdown.classList.toggle('hidden');
+      }
+
+      function selectItem(element) {
+          let value = element.id;
+          let userName = element.textContent.trim();
+
+          if (!selectedValues.includes(value)) {
+              selectedValues.push(value);
+              selectedNames.push(userName);
+              updateSelectedItems();
+          }
+      }
+
+      function updateSelectedItems() {
+          const container = document.getElementById('selected-items');
+          const placeholder = document.getElementById('placeholder');
+          const multiSelectInput = document.getElementById('multi-select');
+          container.innerHTML = '';
+          placeholder.style.display = selectedValues.length ? 'none' : 'block';
+          
+          selectedNames.forEach((userName, index) => {
+              const item = document.createElement('div');
+              item.className = 'bg-blue-500 text-white px-2 py-1 text-sm rounded flex items-center';
+              item.innerHTML = `${userName} <span class='selectedElement ml-2 cursor-pointer'>&times;</span>`;
+              
+              const closeBtn = item.querySelector('.selectedElement');
+              closeBtn.setAttribute('data-value', selectedValues[index]);
+              closeBtn.setAttribute('data-name', userName);
+              
+              closeBtn.addEventListener('click', function () {
+                  removeItem(this.getAttribute('data-value'), this.getAttribute('data-name'));
+              });
+              
+              container.appendChild(item);
+          });
+          
+          multiSelectInput.value = JSON.stringify(selectedValues);
+      }
+
+      function removeItem(value, userName) {
+          selectedValues = selectedValues.filter(v => v !== value);
+          selectedNames = selectedNames.filter(v => v.trim() !== userName.trim());
+          updateSelectedItems();
+      }
+
+      function filterOptions() {
+          const searchValue = document.getElementById('search').value.toLowerCase();
+          document.querySelectorAll("#option-list li").forEach(li => {
+              if (li.textContent.toLowerCase().includes(searchValue)) {
+                  li.style.display = "block";
+              } else {
+                  li.style.display = "none";
+              }
+          });
+      }
+
+      document.addEventListener('click', function(event) {
+          const dropdown = document.getElementById('dropdown');
+          const selectBox = document.getElementById('select-box');
+          if (!dropdown.contains(event.target) && !selectBox.contains(event.target)) {
+              dropdown.classList.add('hidden');
+          }
+      });
+  </script>
+
+    <!--Edit role form-->
+    <!--The select users field script-->
+    <script>
+      let selectedValues2 = [];
+      let selectedNames2 = [];
+
+      function toggleDropdown() {
+          const dropdown = document.getElementById('dropdown2');
+          dropdown.classList.toggle('hidden');
+      }
+
+      function selectItem(element) {
+          let value = element.id;
+          let userName = element.textContent.trim();
+
+          if (!selectedValues.includes(value)) {
+              selectedValues.push(value);
+              selectedNames.push(userName);
+              updateSelectedItems();
+          }
+      }
+
+      function updateSelectedItems() {
+          const container = document.getElementById('selected-items2');
+          const placeholder = document.getElementById('placeholder2');
+          const multiSelectInput = document.getElementById('multi-select2');
+          container.innerHTML = '';
+          placeholder.style.display = selectedValues.length ? 'none' : 'block';
+          
+          selectedNames.forEach((userName, index) => {
+              const item = document.createElement('div');
+              item.className = 'bg-blue-500 text-white px-2 py-1 text-sm rounded flex items-center';
+              item.innerHTML = `${userName} <span class='selectedElement ml-2 cursor-pointer'>&times;</span>`;
+              
+              const closeBtn = item.querySelector('.selectedElement');
+              closeBtn.setAttribute('data-value', selectedValues[index]);
+              closeBtn.setAttribute('data-name', userName);
+              
+              closeBtn.addEventListener('click', function () {
+                  removeItem(this.getAttribute('data-value'), this.getAttribute('data-name'));
+              });
+              
+              container.appendChild(item);
+          });
+          
+          multiSelectInput.value = JSON.stringify(selectedValues);
+      }
+
+      function removeItem(value, userName) {
+          selectedValues = selectedValues.filter(v => v !== value);
+          selectedNames = selectedNames.filter(v => v.trim() !== userName.trim());
+          updateSelectedItems();
+      }
+
+      function filterOptions() {
+          const searchValue = document.getElementById('search').value.toLowerCase();
+          document.querySelectorAll("#option-list li").forEach(li => {
+              if (li.textContent.toLowerCase().includes(searchValue)) {
+                  li.style.display = "block";
+              } else {
+                  li.style.display = "none";
+              }
+          });
+      }
+
+      document.addEventListener('click', function(event) {
+          const dropdown = document.getElementById('dropdown2');
+          const selectBox = document.getElementById('select-box2');
+          if (!dropdown.contains(event.target) && !selectBox.contains(event.target)) {
+              dropdown.classList.add('hidden');
+          }
+      });
+  </script>
+
 
 </body>
 

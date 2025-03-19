@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Multiple Select Dropdown</title>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <form class="w-64" method="get">
+        <label for="multi-select" class="block mb-2 text-gray-700">Select options:</label>
+        <div class="relative">
+            <div id="select-box" class="border p-2 rounded bg-white cursor-pointer" onclick="toggleDropdown()">
+                <div id="selected-items" class="flex flex-wrap gap-1"></div>
+                <span id="placeholder" class="text-gray-400">Select options...</span>
+            </div>
+            
+            <div id="dropdown" class="absolute w-full mt-1 bg-white border rounded shadow-lg hidden">
+                <input type="text" id="search" class="w-full p-2 border-b" placeholder="Search..." onkeyup="filterOptions()">
+                <ul class="max-h-40 overflow-auto" id="option-list">
+                    <li id="AD1245364875" class="p-2 hover:bg-gray-200 cursor-pointer" onclick="selectItem(this)">Option 1</li>
+                    <li id="AD1245364876" class="p-2 hover:bg-gray-200 cursor-pointer" onclick="selectItem(this)">Option 2</li>
+                    <li id="AD1245364877" class="p-2 hover:bg-gray-200 cursor-pointer" onclick="selectItem(this)">Option 3</li>
+                    <li id="AD1245364878" class="p-2 hover:bg-gray-200 cursor-pointer" onclick="selectItem(this)">Option 4</li>
+                </ul>
+            </div>
+        </div>
+        <input type="hidden" name="multi-select" id="multi-select" value="">
+        <button type="submit" class="mt-2 p-2 bg-blue-500 text-white rounded">Send</button>
+    </form>
+
+    <script>
+        let selectedValues = [];
+        let selectedNames = [];
+
+        function toggleDropdown() {
+            const dropdown = document.getElementById('dropdown');
+            dropdown.classList.toggle('hidden');
+        }
+
+        function selectItem(element) {
+            let value = element.id;
+            let userName = element.textContent.trim();
+
+            if (!selectedValues.includes(value)) {
+                selectedValues.push(value);
+                selectedNames.push(userName);
+                updateSelectedItems();
+            }
+        }
+
+        function updateSelectedItems() {
+            const container = document.getElementById('selected-items');
+            const placeholder = document.getElementById('placeholder');
+            const multiSelectInput = document.getElementById('multi-select');
+            container.innerHTML = '';
+            placeholder.style.display = selectedValues.length ? 'none' : 'block';
+            
+            selectedNames.forEach((userName, index) => {
+                const item = document.createElement('div');
+                item.className = 'bg-blue-500 text-white px-2 py-1 text-sm rounded flex items-center';
+                item.innerHTML = `${userName} <span class='selectedElement ml-2 cursor-pointer'>&times;</span>`;
+                
+                const closeBtn = item.querySelector('.selectedElement');
+                closeBtn.setAttribute('data-value', selectedValues[index]);
+                closeBtn.setAttribute('data-name', userName);
+                
+                closeBtn.addEventListener('click', function () {
+                    removeItem(this.getAttribute('data-value'), this.getAttribute('data-name'));
+                });
+                
+                container.appendChild(item);
+            });
+            
+            multiSelectInput.value = JSON.stringify(selectedValues);
+        }
+
+        function removeItem(value, userName) {
+            selectedValues = selectedValues.filter(v => v !== value);
+            selectedNames = selectedNames.filter(v => v.trim() !== userName.trim());
+            updateSelectedItems();
+        }
+
+        function filterOptions() {
+            const searchValue = document.getElementById('search').value.toLowerCase();
+            document.querySelectorAll("#option-list li").forEach(li => {
+                if (li.textContent.toLowerCase().includes(searchValue)) {
+                    li.style.display = "block";
+                } else {
+                    li.style.display = "none";
+                }
+            });
+        }
+
+        document.addEventListener('click', function(event) {
+            const dropdown = document.getElementById('dropdown');
+            const selectBox = document.getElementById('select-box');
+            if (!dropdown.contains(event.target) && !selectBox.contains(event.target)) {
+                dropdown.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

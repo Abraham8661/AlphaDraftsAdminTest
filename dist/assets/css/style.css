@@ -34829,6 +34829,12 @@ h6 {
 .max-h-full {
   max-height: 100%;
 }
+.max-h-5 {
+  max-height: 1.25rem;
+}
+.max-h-10 {
+  max-height: 2.5rem;
+}
 .\!min-h-\[auto\] {
   min-height: auto !important;
 }
@@ -35041,6 +35047,9 @@ h6 {
 }
 .w-60 {
   width: 15rem;
+}
+.w-64 {
+  width: 16rem;
 }
 .w-7 {
   width: 1.75rem;
@@ -40258,6 +40267,10 @@ h6 {
   --tw-text-opacity: 1;
   color: rgb(233 210 209 / var(--tw-text-opacity, 1));
 }
+.text-\[\#ff3b30\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 59 48 / var(--tw-text-opacity, 1));
+}
 .text-\[0\.813\] {
   color: 0.813;
 }
@@ -40453,10 +40466,6 @@ h6 {
 }
 .text-white\/\[\.5\] {
   color: rgb(255 255 255 / .5);
-}
-.text-\[\#ff3b30\] {
-  --tw-text-opacity: 1;
-  color: rgb(255 59 48 / var(--tw-text-opacity, 1));
 }
 .text-opacity-100 {
   --tw-text-opacity: 1;
