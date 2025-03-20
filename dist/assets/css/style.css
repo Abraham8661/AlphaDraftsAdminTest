@@ -35036,6 +35036,9 @@ h6 {
 .w-4\/5 {
   width: 80%;
 }
+.w-44 {
+  width: 11rem;
+}
 .w-48 {
   width: 12rem;
 }
@@ -35503,9 +35506,6 @@ h6 {
 }
 .w-full {
   width: 100%;
-}
-.w-44 {
-  width: 11rem;
 }
 .min-w-0 {
   min-width: 0px;
@@ -39047,6 +39047,10 @@ h6 {
   padding-left: 0.375rem;
   padding-right: 0.375rem;
 }
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -39354,10 +39358,6 @@ h6 {
 .py-\[4rem\] {
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 .\!pb-0 {
   padding-bottom: 0px !important;
@@ -39724,9 +39724,6 @@ h6 {
 }
 .font-inter {
   font-family: Inter, sans-serif;
-}
-.font-\[\'Inter\'\] {
-  font-family: "Inter";
 }
 .\!text-\[\.625rem\] {
   font-size: .625rem !important;
@@ -65305,9 +65302,6 @@ caption {
 }
 .autofill\:pt-6:autofill {
   padding-top: 1.5rem;
-}
-.hover\:border:hover {
-  border-width: 1px;
 }
 .hover\:border-\[\#12c2c2\]:hover {
   --tw-border-opacity: 1;

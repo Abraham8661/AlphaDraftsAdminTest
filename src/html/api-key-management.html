@@ -1,0 +1,232 @@
+ <!-- include main-header.html"-->
+
+</head>
+
+<body>
+
+    <!-- include switcher.html"-->
+    <!-- include loader.html"-->
+    <div class="page">
+
+        <!-- include header.html"-->
+        <!-- include menu.html"-->
+
+
+        <!-- Start::content  -->
+        <div class="content">
+            <!-- Start::main-content -->
+           <div class="main-content">
+            <!-- Page Header -->
+            <div class="block justify-between page-header md:flex">
+                <div>
+                    <h3 class="!text-defaulttextcolor dark:!text-defaulttextcolor/70 dark:text-white dark:hover:text-white text-[1.125rem] font-semibold">API Key Management</h3>
+                    <p class="font-normal text-[#8c9097] dark:text-white/50 text-[0.813rem]">Generate, manage, and monitor API keys for secure access and usage control.</p>
+                </div>
+                <div id="create-new-apikey" class="flex items-center cursor-pointer bg-primary text-white p-2 rounded-md justify-center gap-1">
+                    <i class='bx bx-message-alt-add'></i>
+                    Create API Key
+                </div>
+            </div>
+            <!-- Page Header Close -->
+
+                <div class="grid grid-cols-12 gap-x-6">
+
+                <!--All projects section-->
+                <div class="xxl:col-span-12 xl:col-span-12 col-span-12">
+                    <div class="box custom-card">
+                      <div class="justify-between items-center w-full flex flex-col md:flex-row p-5 gap-5">
+                        <div class="box-title w-full">
+                          All API Keys
+                        </div>
+                      </div>
+                      <div class="box-body">
+                        <div class="overflow-x-auto">
+                          <table class="table min-w-full whitespace-nowrap table-hover border table-bordered">
+                            <thead>
+                              <tr class="border border-inherit border-solid dark:border-defaultborder/10">
+                                <th scope="col" class="!text-start !text-[0.85rem]">Key Name</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">API Key</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">Short Description</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">Date Created</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">Status</th>
+                                <th scope="col" class="!text-start !text-[0.85rem]">Actions</th>
+                              </tr>
+                            </thead>
+                            <tbody id="editData">
+                                <!--Start of Api key row-->
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td>ChatGPT AI Key</td>
+                                  <td>GPTDF4G5H6B21245364875</td>
+                                  <td>Secret key to be used for Instruction Analyser</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>Active</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <div class="ti-btn ti-btn-sm ti-btn-info !rounded-full cursor-pointer editAPIKey">
+                                            <!--Insert the APIKeyID here. It is very important to help open the right notification modal-->
+                                            <p class="hidden">AD1245364875</p>
+                                            <i class="ri-edit-line"></i>
+                                        </div>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteAPIkey">
+                                          <!--Insert the APIKeyID here also. It is very important to help open the notification modal-->
+                                          <p class="hidden">AD1245364876</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <!--End of row 1-->
+                                <!--Start of others Api key row-->
+                                <tr class="border border-inherit border-solid hover:bg-gray-100 dark:border-defaultborder/10 dark:hover:bg-light">
+                                  <td>ChatGPT AI Key</td>
+                                  <td>GPTDF4G5H6B21245364875</td>
+                                  <td>Secret key to be used for Instruction Analyser</td>
+                                  <td>Feb 12, 2025 at 8:30PM</td>
+                                  <td>Active</td>
+                                  <td>
+                                    <div class="hstack flex items-center gap-3 text-[.9375rem]">
+                                        <div class="ti-btn ti-btn-sm ti-btn-info !rounded-full cursor-pointer editAPIKey">
+                                            <!--Insert the APIKeyID here. It is very important to help open the right notification modal-->
+                                            <p class="hidden">AD1245364875</p>
+                                            <i class="ri-edit-line"></i>
+                                        </div>
+                                        <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deleteAPIkey">
+                                          <!--Insert the APIKeyID here also. It is very important to help open the notification modal-->
+                                          <p class="hidden">AD1245364876</p>
+                                          <i class="ri-delete-bin-line"></i>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <!--End of others api key-->
+                            
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+                </div>
+            </div>
+        </div>
+        <!-- End::content  -->
+
+        <!--Popups-->
+        <!--Create API Key form popup-->
+        <section id="create-apikey-popup-section" class="p-6 w-full gap-[10px] lg:gap-[20px] hidden flex-col items-center justify-center h-screen top-0 z-50 bg-black/70 fixed">
+            <div class="p-5 bg-white rounded-[20px] flex-col justify-start items-center gap-5 inline-flex w-full lg:w-[40%]">
+              <div class="flex items-center justify-center gap-[20px] w-full">
+                <h2 class="text-gray-900 text-xl lg:text-2xl font-bold leading-normal lg:leading-[44px] w-full text-center">Create API Key</h2>
+                <div id="close-create-new-apikey" class="cursor-pointer text-xl lg:text-2xl"><i class="las la-times"></i></div>
+              </div>
+              <!--Create API key form-->
+              <form action="" method="post" class="flex flex-col items-start justify-start gap-[20px] w-full">
+                <div class="flex flex-col items-center justify-start gap-[10px] w-full">
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="keyName" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Key Name</label>
+                    <input type="text" required placeholder="Enter a name" name="keyName" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="apiKey" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">API Key</label>
+                    <input type="text" required placeholder="Enter the api key" name="apiKey" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="shortDescription" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Short description</label>
+                    <input type="text" placeholder="Enter a short description" name="shortDescription" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="apiStatus" class="text-gray-900 text-base lg:text-lg font-normal text-center leading-tight lg:leading-7">Status</label>
+                    <select name="apiStatus" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                      <option value="Active">Active</option>
+                      <option value="Inactive">Inactive</option>
+                    </select>
+                  </div>
+                </div>
+                <button class="lg:flex px-5 py-2.5 bg-primary text-white text-[16px] lg:text-xl font-medium  rounded-[10px] justify-center items-center gap-2.5">Create key</button>
+              </form>
+            </div>
+          </section>
+        <!--Edit API Key form popup-->
+        <section id="edit-apikey-popup-section" class="p-6 w-full gap-[10px] lg:gap-[20px] hidden flex-col items-center justify-center h-screen top-0 z-50 bg-black/70 fixed">
+            <div class="p-5 bg-white rounded-[20px] flex-col justify-start items-center gap-5 inline-flex w-full lg:w-[40%]">
+              <div class="flex items-center justify-center gap-[20px] w-full">
+                <h2 class="text-gray-900 text-xl lg:text-2xl font-bold leading-normal lg:leading-[44px] w-full text-center">Edit API Key</h2>
+                <div id="close-edit-apikey" class="cursor-pointer text-xl lg:text-2xl"><i class="las la-times"></i></div>
+              </div>
+              <!--Create API key form-->
+              <form action="" method="post" class="flex flex-col items-start justify-start gap-[20px] w-full">
+                <!--APIKeyId details to change-->
+                <input type="text" class="hidden" name="selectedAPIKeyID" value="" id="selectedAPIKeyID">
+                <div class="flex flex-col items-center justify-start gap-[10px] w-full">
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="keyName" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Key Name</label>
+                    <input type="text" required placeholder="Enter a name" name="keyName" value="ChatGPT AI Key" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="apiKey" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">API Key</label>
+                    <input type="text" required placeholder="Enter the api key" value="GPTDF4G5H6B21245364875" name="apiKey" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="shortDescription" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Short description</label>
+                    <input type="text" placeholder="Enter a short description" value="Secret key to be used for Instruction Analyser" name="shortDescription" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="apiStatus" class="text-gray-900 text-base lg:text-lg font-normal text-center leading-tight lg:leading-7">Status</label>
+                    <select name="apiStatus" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                      <option value="Active">Active</option>
+                      <option value="Inactive">Inactive</option>
+                    </select>
+                  </div>
+                </div>
+                <button class="lg:flex px-5 py-2.5 bg-primary text-white text-[16px] lg:text-xl font-medium  rounded-[10px] justify-center items-center gap-2.5">Save changes</button>
+              </form>
+            </div>
+          </section>
+        
+          <!--Delete notification popup-->
+          <section id="delete-apikey-popup-section" class="p-6 w-full gap-[10px] lg:gap-[20px] hidden flex-col items-center justify-center top-0 h-full z-50 bg-black/70 fixed">
+            <div class="p-5 bg-white rounded-[20px] flex-col justify-start items-center gap-5 inline-flex w-full lg:w-[40%]">
+              <div class="flex items-center justify-center gap-[20px] w-full">
+                <h2 class="text-gray-900 text-xl lg:text-2xl font-bold leading-normal lg:leading-[44px] w-full text-center">Delete API Key</h2>
+                <div id="close-apikey-form-popup" class="cursor-pointer text-xl lg:text-2xl"><i class="las la-times"></i></div>
+              </div>
+              <p class="text-gray-900 text-base lg:text-xl font-normal leading-loose lg:leading-normal w-full text-center">Are you sure you want to delete this api key? This action cannot be undone.</p>
+              <!--Delete API key form-->
+              <form action="" method="post" class="flex flex-col items-start justify-start gap-[20px] w-full">
+                <!--ApiKey details to change-->
+                <input type="text" class="hidden" name="apiKeyIDtoDelete" value="" id="apiKeyIDtoDelete">
+                  <div class="flex items-center justify-between w-full gap-5">
+                    <button class="flex px-5 py-2.5 bg-red-500 text-white text-[16px] lg:text-xl font-medium  rounded-[10px] justify-center items-center gap-2.5 w-full">Delete</button>
+                    <div class="flex items-center justify-center cursor-pointer px-5 py-2.5 text-[16px] lg:text-xl border border-gray-900 w-full rounded-[10px]" id="cancelDelete">Cancel</div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+                                                                                                                                                                          
+
+        <!-- include headersearch_modal.html"-->
+
+    </div>
+
+    <!-- include commonjs.html"-->
+
+    <!-- include custom_switcherjs.html"-->
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/api-key-management.js"></script>
+
+</body>
+
+</html>
