@@ -1,0 +1,305 @@
+ <!-- include main-header.html"-->
+
+</head>
+
+<body>
+
+    <!-- include switcher.html"-->
+    <!-- include loader.html"-->
+    <div class="page">
+
+        <!-- include header.html"-->
+        <!-- include menu.html"-->
+
+
+        <!-- Start::content  -->
+        <div class="content">
+            <!-- Start::main-content -->
+           <div class="main-content">
+            <!-- Page Header -->
+            <div class="block justify-between page-header md:flex">
+                <div>
+                    <h3 class="!text-defaulttextcolor dark:!text-defaulttextcolor/70 dark:text-white dark:hover:text-white text-[1.125rem] font-semibold">Subscription Settings</h3>
+                    <p class="font-normal text-[#8c9097] dark:text-white/50 text-[0.813rem]">Manage plans, billing cycles, pricing, and payments for seamless subscriptions.</p>
+                </div>
+                <div id="create-new-plan" class="flex items-center cursor-pointer bg-primary text-white p-2 rounded-md justify-center gap-1">
+                    <i class='bx bx-message-alt-add'></i>
+                    Create plan
+                </div>
+            </div>
+            <!-- Page Header Close -->
+
+                <!--Monthly subscription price-->
+                <div id="monthlyData" class="grid grid-cols-12 gap-x-6">
+                  <!--Start of first card-->
+                    <div class="xxl:col-span-3 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+                        <div class="box">
+                            <div class="box-header !flex !flex-col !items-start !justify-start">
+                                <div class="box-title">Personal</div>
+                                <p class="font-normal text-[#8c9097] dark:text-white/50 text-[0.813rem] !text-left">For trial (7 days)</p>
+                            </div>
+                            <div class="box-body">
+                              <div class="flex items-center justify-start gap-2.5">
+                                <h6 class="font-semibold text-[2rem] lg:text-[2.5rem]">$0</h6>
+                                <p class="font-normal text-[#8c9097] dark:text-white/50 text-[0.813rem] !text-left">/month</p>
+                              </div>
+                              <div class="flex items-center justify-start gap-2.5">
+                                <h6 class="font-semibold text-[2rem] lg:text-[2.5rem]">$0</h6>
+                                <p class="font-normal text-[#8c9097] dark:text-white/50 text-[0.813rem] !text-left">/year</p>
+                              </div>
+                            </div>
+                            <div class="box-body">
+                              <p class="card-text mb-4">Basic Grammar & Spell Check</p>
+                              <p class="card-text mb-4">Limited Citation Assistant</p>
+                              <p class="card-text mb-4">Basic Smart Assignment Guidance</p>
+                              <p class="card-text mb-4">Limited style and grammar checker</p>
+                              <p class="card-text mb-4">Access to Community Support</p>
+                            </div>
+                            <div class="box-body hstack flex gap-3 text-[.9375rem]">
+                              <div class="ti-btn ti-btn-sm ti-btn-info !rounded-full cursor-pointer editPlan">
+                                  <!--Insert the planID here also. It is very important to help open the right plan modal to save new changes-->
+                                  <p class="hidden">AD1245364878</p>
+                                  <i class="ri-edit-line"></i>
+                              </div>
+                              <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deletePlan">
+                                <!--Insert the userID here also. It is very important to help open the right user modal-->
+                                <p class="hidden">AD1245364878</p>
+                                <i class="ri-delete-bin-line"></i>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End of first card-->
+                  <!--Start of others card-->
+                    <div class="xxl:col-span-3 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+                        <div class="box">
+                            <div class="box-header !flex !flex-col !items-start !justify-start">
+                                <div class="box-title">Premium</div>
+                                <p class="font-normal text-[#8c9097] dark:text-white/50 text-[0.813rem] !text-left">For students and researchers</p>
+                            </div>
+                            <div class="box-body">
+                              <div class="flex items-center justify-start gap-2.5">
+                                <h6 class="font-semibold text-[2rem] lg:text-[2.5rem]">$10</h6>
+                                <p class="font-normal text-[#8c9097] dark:text-white/50 text-[0.813rem] !text-left">/month</p>
+                              </div>
+                              <div class="flex items-center justify-start gap-2.5">
+                                <h6 class="font-semibold text-[2rem] lg:text-[2.5rem]">$100</h6>
+                                <p class="font-normal text-[#8c9097] dark:text-white/50 text-[0.813rem] !text-left">/year</p>
+                              </div>
+                            </div>
+                            <div class="box-body">
+                              <p class="card-text mb-4">Basic Grammar & Spell Check</p>
+                              <p class="card-text mb-4">Limited Citation Assistant</p>
+                              <p class="card-text mb-4">Basic Smart Assignment Guidance</p>
+                              <p class="card-text mb-4">Limited style and grammar checker</p>
+                              <p class="card-text mb-4">Access to Community Support</p>
+                            </div>
+                            <div class="box-body hstack flex gap-3 text-[.9375rem]">
+                              <div class="ti-btn ti-btn-sm ti-btn-info !rounded-full cursor-pointer editPlan">
+                                  <!--Insert the planID here also. It is very important to help open the right plan modal to save new changes-->
+                                  <p class="hidden">AD1245364878</p>
+                                  <i class="ri-edit-line"></i>
+                              </div>
+                              <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deletePlan">
+                                <!--Insert the userID here also. It is very important to help open the right user modal-->
+                                <p class="hidden">AD1245364878</p>
+                                <i class="ri-delete-bin-line"></i>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xxl:col-span-3 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12 col-span-12">
+                        <div class="box">
+                            <div class="box-header !flex !flex-col !items-start !justify-start">
+                                <div class="box-title">Enterprise</div>
+                                <p class="font-normal text-[#8c9097] dark:text-white/50 text-[0.813rem] !text-left">For institutions and universities</p>
+                            </div>
+                            <div class="box-body">
+                              <div class="flex items-center justify-start gap-2.5">
+                                <h6 class="font-semibold text-[2rem] lg:text-[2.5rem]">$200</h6>
+                                <p class="font-normal text-[#8c9097] dark:text-white/50 text-[0.813rem] !text-left">/month</p>
+                              </div>
+                              <div class="flex items-center justify-start gap-2.5">
+                                <h6 class="font-semibold text-[2rem] lg:text-[2.5rem]">$1000</h6>
+                                <p class="font-normal text-[#8c9097] dark:text-white/50 text-[0.813rem] !text-left">/year</p>
+                              </div>
+                            </div>
+                            <div class="box-body">
+                              <p class="card-text mb-4">Basic Grammar & Spell Check</p>
+                              <p class="card-text mb-4">Limited Citation Assistant</p>
+                              <p class="card-text mb-4">Basic Smart Assignment Guidance</p>
+                              <p class="card-text mb-4">Limited style and grammar checker</p>
+                              <p class="card-text mb-4">Access to Community Support</p>
+                            </div>
+                            <div class="box-body hstack flex gap-3 text-[.9375rem]">
+                              <div class="ti-btn ti-btn-sm ti-btn-info !rounded-full cursor-pointer editPlan">
+                                  <!--Insert the planID here also. It is very important to help open the right plan modal to save new changes-->
+                                  <p class="hidden">AD1245364878</p>
+                                  <i class="ri-edit-line"></i>
+                              </div>
+                              <div class="ti-btn ti-btn-sm ti-btn-danger !rounded-full cursor-pointer deletePlan">
+                                <!--Insert the userID here also. It is very important to help open the right user modal-->
+                                <p class="hidden">AD1245364878</p>
+                                <i class="ri-delete-bin-line"></i>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End of others card-->
+                </div>
+                
+              </div>
+                </div>
+            </div>
+        </div>
+        <!-- End::content  -->
+
+        <!--Popups-->
+        <!--Create Plan form popup-->
+        <section id="create-plan-popup-section" class="p-6 w-full gap-[10px] lg:gap-[20px] hidden flex-col items-center justify-center h-screen top-0 z-50 bg-black/70 fixed">
+            <div class="p-5 bg-white rounded-[20px] flex-col justify-start items-center gap-5 inline-flex w-full lg:w-[40%] lg:h-full overflow-y-scroll">
+              <div class="flex items-center justify-center gap-[20px] w-full">
+                <h2 class="text-gray-900 text-xl lg:text-2xl font-bold leading-normal lg:leading-[44px] w-full text-center">Create Subscription Plan</h2>
+                <div id="close-create-new-plan" class="cursor-pointer text-xl lg:text-2xl"><i class="las la-times"></i></div>
+              </div>
+              <!--Create plan form-->
+              <form action="" method="post" class="flex flex-col items-start justify-start gap-[20px] w-full lg:h-full overflow-y-scroll">
+                <div class="flex flex-col items-center justify-start gap-[10px] w-full">
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="planName" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Plan name</label>
+                    <input type="text" required placeholder="Enter preferred plan name" name="planName" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="planDescription" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Plan description</label>
+                    <input type="text" required placeholder="Enter short description" name="planDescription" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="planPriceMonthly" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Price (Monthly)</label>
+                    <input type="number" required placeholder="Enter monthly price" name="planPriceMonthly" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="planPriceYearly" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Price (Yearly)</label>
+                    <input type="number" required placeholder="Enter yearly price" name="planPriceYearly" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="feature1" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Features</label>
+                    <input type="text" placeholder="Enter feature" name="feature1" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                    <input type="text" placeholder="Enter feature" name="feature2" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                    <input type="text" placeholder="Enter feature" name="feature3" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                    <input type="text" placeholder="Enter feature" name="feature4" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                    <input type="text" placeholder="Enter feature" name="feature5" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                    <input type="text" placeholder="Enter feature" name="feature6" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                    <input type="text" placeholder="Enter feature" name="feature7" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                    <input type="text" placeholder="Enter feature" name="feature8" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                    <input type="text" placeholder="Enter feature" name="feature9" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                    <input type="text" placeholder="Enter feature" name="feature10" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="planTrials" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Trial days (If any)</label>
+                    <input type="number" placeholder="Enter trial days" name="planTrials" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                </div>
+                <button class="lg:flex px-5 py-2.5 bg-primary text-white text-[16px] lg:text-xl font-medium  rounded-[10px] justify-center items-center gap-2.5">Create plan</button>
+              </form>
+            </div>
+          </section>
+        <!--Edit Plan form popup-->
+        <section id="Edit-plan-popup-section" class="p-6 w-full gap-[10px] lg:gap-[20px] hidden flex-col items-center justify-center h-screen top-0 z-50 bg-black/70 fixed">
+            <div class="p-5 bg-white rounded-[20px] flex-col justify-start items-center gap-5 inline-flex w-full lg:w-[40%] lg:h-full overflow-y-scroll">
+              <div class="flex items-center justify-center gap-[20px] w-full">
+                <h2 class="text-gray-900 text-xl lg:text-2xl font-bold leading-normal lg:leading-[44px] w-full text-center">Edit Subscription Plan</h2>
+                <div id="close-edit-plan" class="cursor-pointer text-xl lg:text-2xl"><i class="las la-times"></i></div>
+              </div>
+              <!--Create plan form-->
+              <form action="" method="post" class="flex flex-col items-start justify-start gap-[20px] w-full lg:h-full overflow-y-scroll">
+                <!--planId details to change, this is to know the plan which details is to be changed-->
+                <input type="text" class="hidden" name="planIDtoEdit" value="" id="planIDtoEdit">
+                <div class="flex flex-col items-center justify-start gap-[10px] w-full">
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="planName" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Plan name</label>
+                    <input type="text" required placeholder="Enter preferred plan name" name="planName" value="Personal" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="planDescription" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Plan description</label>
+                    <input type="text" required placeholder="Enter short description" name="planDescription" value="For trial (7 days)" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="planPriceMonthly" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Price (Monthly)</label>
+                    <input type="number" required placeholder="Enter monthly price" name="planPriceMonthly" value="0" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="planPriceYearly" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Price (Yearly)</label>
+                    <input type="number" required placeholder="Enter yearly price" name="planPriceYearly" value="0" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="feature1" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Features</label>
+                    <input type="text" placeholder="Enter feature" name="feature1" value="Basic Grammar & Spell Check" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                    <input type="text" placeholder="Enter feature" name="feature2" value="Limited Citation Assistant" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                    <input type="text" placeholder="Enter feature" name="feature3" value="Basic Smart Assignment Guidance" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                    <input type="text" placeholder="Enter feature" name="feature4" value="Limited style and grammar checker" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                    <input type="text" placeholder="Enter feature" name="feature5" value="Access to Community Support" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                    <input type="text" placeholder="Enter feature" name="feature6" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                    <input type="text" placeholder="Enter feature" name="feature7" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                    <input type="text" placeholder="Enter feature" name="feature8" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                    <input type="text" placeholder="Enter feature" name="feature9" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                    <input type="text" placeholder="Enter feature" name="feature10" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                  <!--Form item-->
+                  <div class="flex flex-col gap-[10px] items-start justify-start w-full">
+                    <label for="planTrials" class="text-gray-900 text-base lg:text-lg font-normal text-left leading-tight lg:leading-7">Trial days (If any)</label>
+                    <input type="number" placeholder="Enter trial days" name="planTrials" value="7" id="" class="w-full p-2.5 pr-0 rounded-[5px] border border-gray-400 focus:border-gray-800 justify-start items-start gap-2.5 flex text-gray-900 text-base lg:text-lg font-normal leading-tight lg:leading-7">
+                  </div>
+                </div>
+                <button class="lg:flex px-5 py-2.5 bg-primary text-white text-[16px] lg:text-xl font-medium  rounded-[10px] justify-center items-center gap-2.5">Save changes</button>
+              </form>
+            </div>
+          </section>
+
+          <!--Delete plan popup-->
+          <section id="delete-plan-popup-section" class="p-6 w-full gap-[10px] lg:gap-[20px] hidden flex-col items-center justify-center top-0 h-full z-50 bg-black/70 fixed">
+            <div class="p-5 bg-white rounded-[20px] flex-col justify-start items-center gap-5 inline-flex w-full lg:w-[40%]">
+              <div class="flex items-center justify-center gap-[20px] w-full">
+                <h2 class="text-gray-900 text-xl lg:text-2xl font-bold leading-normal lg:leading-[44px] w-full text-center">Delete plan</h2>
+                <div id="close-delete-plan-form-popup" class="cursor-pointer text-xl lg:text-2xl"><i class="las la-times"></i></div>
+              </div>
+              <p class="text-gray-900 text-base lg:text-xl font-normal leading-loose lg:leading-normal w-full text-center">Are you sure you want to delete this plan? This action cannot be undone.</p>
+              <!--Delete plan form-->
+              <form action="" method="post" class="flex flex-col items-start justify-start gap-[20px] w-full">
+                <!--PlanId details to change-->
+                <input type="text" class="hidden" name="planIDtoDelete" value="" id="planIDtoDelete">
+                  <div class="flex items-center justify-between w-full gap-5">
+                    <button class="flex px-5 py-2.5 bg-red-500 text-white text-[16px] lg:text-xl font-medium  rounded-[10px] justify-center items-center gap-2.5 w-full">Delete</button>
+                    <div class="flex items-center justify-center cursor-pointer px-5 py-2.5 text-[16px] lg:text-xl border border-gray-900 w-full rounded-[10px]" id="cancelDelete">Cancel</div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+                                                                                                                                                                          
+
+        <!-- include headersearch_modal.html"-->
+
+    </div>
+
+    <!-- include commonjs.html"-->
+
+    <!-- include custom_switcherjs.html"-->
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/subscription-settings.js"></script>
+
+</body>
+
+</html>
